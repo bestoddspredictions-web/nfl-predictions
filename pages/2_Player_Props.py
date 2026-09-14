@@ -393,6 +393,26 @@ def format_predictions_display(filtered, wf_metrics):
         lambda x: f"#{int(x)}/32" + (" 🛡️" if x <= 8 else (" ⚠️" if x >= 24 else ""))
     )
 
+    # Game date/time, so recommendations can be checked against the actual
+    # matchup they're for rather than trusted at face value.
+    if 'game_date' in display_df.columns:
+        game_dt = pd.to_datetime(display_df['game_date'], errors='coerce', utc=True)
+        try:
+            # NFL kickoff times are conventionally reported in ET regardless
+            # of the fan's own timezone.
+            game_dt_local = game_dt.dt.tz_convert('US/Eastern')
+            tz_label = 'ET'
+        except Exception:
+            # Falls back to UTC if the IANA timezone database (tzdata) isn't
+            # installed in this environment, rather than crashing the page.
+            game_dt_local = game_dt
+            tz_label = 'UTC'
+        display_df['Game Date'] = game_dt_local.dt.strftime(f'%a %b %-d, %-I:%M %p {tz_label}')
+        # Rows with an unparseable date fall back to a blank rather than "NaT".
+        display_df['Game Date'] = display_df['Game Date'].where(game_dt.notna(), '')
+    else:
+        display_df['Game Date'] = ''
+
     def _model_name_from_row(row):
         prop = row.get('prop_type', '')
         lt = row.get('line_type', '')
@@ -405,7 +425,7 @@ def format_predictions_display(filtered, wf_metrics):
         display_df['Injury Status'] = ''
 
     show_cols = [
-        'display_name', 'position', 'team', 'opponent', 'Defense Rank', 'trend', 'prop_type',
+        'display_name', 'position', 'team', 'opponent', 'Game Date', 'Defense Rank', 'trend', 'prop_type',
         'Recommendation', 'Confidence', 'Tier', 'Model Reliability',
         'Last 3 Avg', 'Last 5 Avg', 'Last 10 Avg', 'weather_conditions', 'Injury Status'
     ]
