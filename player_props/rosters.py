@@ -125,13 +125,54 @@ def get_current_rosters(force_refresh=False):
     return normalized
 
 
-def build_current_team_lookup(rosters_df):
-    """Build a {player_name: current_team} dict for fast lookup. Returns an
-    empty dict if rosters_df is None, so callers can use `.get(name, team)`
-    without a None-check at every call site."""
+def build_current_team_lookup(rosters_df, players_df=None):
+    """
+    Build a {short_name: current_team} dict for fast lookup, keyed the same
+    way the historical stats files identify players (e.g. 'A.Dillon').
+
+    nflreadpy's roster data identifies players by gsis_id and full name
+    ('AJ Dillon'), NOT the abbreviated 'F.Lastname' short_name format used
+    throughout player_passing_stats.csv / player_rushing_stats.csv /
+    player_receiving_stats.csv (e.g. 'A.Dillon'). A direct name-string
+    lookup between the two therefore almost never matches. We instead join
+    on gsis_id (present and reliable in both nflreadpy's roster data and
+    data_files/players.csv) to translate each roster row to the matching
+    short_name before building the lookup dict.
+
+    Returns an empty dict if rosters_df is None or players_df/gsis_id/
+    short_name aren't available, so callers can use `.get(name, team)`
+    without a None-check at every call site — and, importantly, so a
+    lookup failure never silently blocks all players (see
+    filter_active_on_team, which only drops a player it can positively
+    confirm has moved on).
+    """
     if rosters_df is None or rosters_df.empty:
         return {}
-    return dict(zip(rosters_df['player_name'], rosters_df['team']))
+
+    if players_df is None:
+        try:
+            players_path = DATA_DIR / 'players.csv'
+            players_df = pd.read_csv(players_path, usecols=['gsis_id', 'short_name'])
+        except Exception as exc:
+            print(f"⚠️ Could not load players.csv to translate roster names: {exc}")
+            return {}
+
+    if 'gsis_id' not in rosters_df.columns or 'gsis_id' not in players_df.columns:
+        print("⚠️ gsis_id missing from roster or players data; cannot build "
+              "a reliable current-team lookup (name formats don't match "
+              "between historical stats and roster data). Falling back to "
+              "historical team assignment only.")
+        return {}
+
+    merged = rosters_df.merge(
+        players_df[['gsis_id', 'short_name']].dropna(subset=['short_name']),
+        on='gsis_id',
+        how='inner'
+    )
+    if merged.empty:
+        return {}
+
+    return dict(zip(merged['short_name'], merged['team']))
 
 
 def filter_active_on_team(player_names, team, current_team_lookup):
