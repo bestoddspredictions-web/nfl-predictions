@@ -152,6 +152,64 @@ jobs:
           git push
         continue-on-error: true
       
+      - name: Sync deploy branch with main
+        if: steps.season_check.outputs.in_season == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+          # deploy is what Render actually serves. It deliberately excludes
+          # data_files/nfl_play_by_play_historical.csv.gz (a Git LFS pointer
+          # on main) to avoid the LFS smudge failures that broke the original
+          # Streamlit Cloud deployment. Without this step, deploy only gets
+          # tonight's fresh data when a human remembers to merge main into it
+          # -- which is exactly what let deploy silently run on stale data
+          # for days at a time.
+          # The initial checkout is a shallow (depth-1) clone of only the
+          # triggering ref (main, for scheduled runs). A real merge across
+          # branches needs actual shared history, not a 1-commit sliver, or
+          # git may treat every file as conflicting/unrelated. Unshallow and
+          # fetch both branches in full before merging.
+          git fetch --unshallow origin || git fetch origin  # already-unshallow repos error on --unshallow
+          git fetch origin main deploy
+
+          git checkout -B deploy origin/deploy
+          # main's own nightly pipeline actively touches the LFS pointer for
+          # data_files/nfl_play_by_play_historical.csv.gz, so a plain merge
+          # would hit a real conflict on that one path most nights -- not an
+          # occasional edge case. Tell git to always prefer deploy's side
+          # (i.e. the file's absence) for that path specifically, while
+          # merging every other file normally.
+          git merge origin/main --no-edit -m "Auto-sync: merge main into deploy [skip ci]" \
+            -X ours 2>/tmp/merge_output.log
+          MERGE_STATUS=$?
+          cat /tmp/merge_output.log
+
+          if [ $MERGE_STATUS -ne 0 ]; then
+            # -X ours only resolves *content* conflicts in files that exist
+            # on both sides; a genuine structural conflict elsewhere still
+            # needs a human. Bail out safely rather than guessing.
+            echo "❌ Merge conflict syncing main into deploy that -X ours"
+            echo "   couldn't resolve -- leaving deploy unchanged so a human"
+            echo "   can resolve this manually. The fresh data still landed"
+            echo "   safely on main."
+            git merge --abort
+            exit 0
+          fi
+
+          # Merging main can reintroduce the LFS pointer file if main's tree
+          # includes it and nothing on deploy's side removes it again. Make
+          # sure it's absent so deploy never regresses back into the LFS
+          # problem it exists to avoid.
+          if [ -f data_files/nfl_play_by_play_historical.csv.gz ]; then
+            git rm --cached data_files/nfl_play_by_play_historical.csv.gz
+            rm -f data_files/nfl_play_by_play_historical.csv.gz
+            git commit -m "Re-exclude LFS play-by-play file from deploy [skip ci]"
+          fi
+
+          git push origin deploy
+        continue-on-error: true  # Don't fail the whole run if the sync has issues; main already has the data safely
+
       - name: Summary
         if: steps.season_check.outputs.in_season == 'true'
         run: |
