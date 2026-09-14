@@ -15,6 +15,7 @@ warnings.filterwarnings('ignore')
 try:
     from .injuries import get_injury_report, find_player_injury, adjust_prediction_for_injury
     from .weather import get_weather_for_game, adjust_for_weather
+    from .rosters import get_current_rosters, build_current_team_lookup, filter_active_on_team
 except ImportError:
     # Fallback for direct execution
     import sys
@@ -22,6 +23,7 @@ except ImportError:
     sys.path.append(os.path.dirname(__file__))
     from injuries import get_injury_report, find_player_injury, adjust_prediction_for_injury
     from weather import get_weather_for_game, adjust_for_weather
+    from rosters import get_current_rosters, build_current_team_lookup, filter_active_on_team
 
 # ============================================================================
 # CONFIGURATION
@@ -322,10 +324,17 @@ def load_models():
 # PLAYER IDENTIFICATION
 # ============================================================================
 
-def get_recent_starters(stats_df, team, n_games=3):
+def get_recent_starters(stats_df, team, n_games=3, current_team_lookup=None):
     """
     Get players who have recently played for a team.
     Uses last N games to identify likely starters.
+
+    Historical stat rows only reflect the team a player was on THE LAST TIME
+    they logged a stat, which goes stale the moment a player changes teams.
+    If current_team_lookup is provided (see rosters.py), any player whose
+    CURRENT roster team differs from `team` is dropped from this list — e.g.
+    a player who was traded or hit free agency no longer appears under
+    their old team just because that's what their last box score says.
     """
     if stats_df is None or stats_df.empty:
         return []
@@ -349,7 +358,11 @@ def get_recent_starters(stats_df, team, n_games=3):
     
     # Filter to players who played in at least 1 of last 3 games
     active_players = player_activity[player_activity['game_id'] >= 1]['player_name'].tolist()
-    
+
+    # Drop anyone confirmed (via current roster data) to no longer be on this team
+    if current_team_lookup:
+        active_players = filter_active_on_team(active_players, team, current_team_lookup)
+
     return active_players
 
 
@@ -838,7 +851,7 @@ def get_player_performance_tier(player_name, prop_type, all_stats):
     return 'starter'
 
 
-def predict_props_for_game(game_row, all_stats, models, injuries_df):
+def predict_props_for_game(game_row, all_stats, models, injuries_df, current_team_lookup=None):
     """
     Generate prop predictions for all players in a game.
     """
@@ -870,7 +883,7 @@ def predict_props_for_game(game_row, all_stats, models, injuries_df):
         all_starters = set()
         for stat_type, stats_df in all_stats.items():
             if stats_df is not None:
-                team_starters = get_recent_starters(stats_df, team)
+                team_starters = get_recent_starters(stats_df, team, current_team_lookup=current_team_lookup)
                 all_starters.update(team_starters)
         
         for player_name in all_starters:
@@ -1055,6 +1068,13 @@ def generate_predictions():
     
     all_stats = load_player_stats()
     models = load_models()
+
+    # Current-season rosters, used to correct/filter stale team assignments
+    # from historical box scores (e.g. a player who changed teams in free
+    # agency but hasn't logged a game under their new team yet).
+    current_rosters = get_current_rosters()
+    current_team_lookup = build_current_team_lookup(current_rosters)
+
     t_data_end = time.time()
     print(f"   [Profile] Data & Models loading: {t_data_end - t_data_start:.2f}s")
     
@@ -1078,12 +1098,10 @@ def generate_predictions():
     for idx, game_row in schedule.iterrows():
         print(f"\n📅 {game_row['away_team']} @ {game_row['home_team']} (Week {game_row['week']})")
         
-        game_predictions = predict_props_for_game(game_row, all_stats, models, injuries_df)
+        game_predictions = predict_props_for_game(game_row, all_stats, models, injuries_df, current_team_lookup=current_team_lookup)
         all_predictions.extend(game_predictions)
         
         print(f"   Generated {len(game_predictions)} prop predictions")
-        
-        break  # Only run one game for profiling
     
     # Save predictions
     if all_predictions:
