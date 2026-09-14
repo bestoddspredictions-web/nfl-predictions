@@ -366,6 +366,218 @@ def get_recent_form(stats_df, player_name, n_games=5):
     return player_stats.head(n_games)
 
 
+def format_predictions_display(filtered, wf_metrics):
+    """Take a raw predictions dataframe slice and return the fully formatted
+    display-ready dataframe + the list/rename mapping used by the rich props
+    table (Defense Rank, Trend, Recommendation, Confidence, Tier, Model
+    Reliability, Last 3/5/10 Avg, Weather, Injury Status).
+
+    Shared by the Top Picks tab and the per-player Prop Finder view so both
+    surfaces render identical columns from a single source of truth.
+    """
+    display_df = filtered.copy()
+    # Expand team abbreviations to full names — display layer only.
+    display_df['team'] = display_df['team'].apply(expand_team)
+    display_df['opponent'] = display_df['opponent'].apply(expand_team)
+    display_df['Confidence'] = display_df['confidence'].apply(lambda x: f"{x:.1%}")
+    display_df['Recommendation'] = display_df.apply(
+        lambda row: f"{row['recommendation']} {row['line_value']:.1f}", axis=1
+    )
+    display_df['Tier'] = display_df['confidence'].apply(
+        lambda x: '🔥 Elite' if x >= 0.65 else ('💪 Strong' if x >= 0.60 else '✅ Good')
+    )
+    display_df['Last 3 Avg'] = display_df['avg_L3'].apply(lambda x: f"{x:.1f}")
+    display_df['Last 5 Avg'] = display_df['avg_L5'].apply(lambda x: f"{x:.1f}")
+    display_df['Last 10 Avg'] = display_df['avg_L10'].apply(lambda x: f"{x:.1f}")
+    display_df['Defense Rank'] = display_df['opponent_def_rank'].apply(
+        lambda x: f"#{int(x)}/32" + (" 🛡️" if x <= 8 else (" ⚠️" if x >= 24 else ""))
+    )
+
+    def _model_name_from_row(row):
+        prop = row.get('prop_type', '')
+        lt = row.get('line_type', '')
+        return get_reliability_badge(f"{prop}_{lt}", wf_metrics)
+    display_df['Model Reliability'] = display_df.apply(_model_name_from_row, axis=1)
+
+    if 'injury_note' in display_df.columns:
+        display_df['Injury Status'] = display_df['injury_note'].fillna('')
+    else:
+        display_df['Injury Status'] = ''
+
+    show_cols = [
+        'display_name', 'position', 'team', 'opponent', 'Defense Rank', 'trend', 'prop_type',
+        'Recommendation', 'Confidence', 'Tier', 'Model Reliability',
+        'Last 3 Avg', 'Last 5 Avg', 'Last 10 Avg', 'weather_conditions', 'Injury Status'
+    ]
+
+    rename_map = {
+        'display_name': 'Player',
+        'position': 'Pos',
+        'team': 'Team',
+        'opponent': 'Opp',
+        'trend': 'Trend',
+        'prop_type': 'Prop Type',
+        'weather_conditions': 'Weather'
+    }
+
+    return display_df, show_cols, rename_map
+
+
+def render_qb_season_leaders(passing_stats):
+    """Render the 2025 season passing leaderboard (QBs)."""
+    st.subheader("🏆 2025 Season Leaders - Quarterbacks")
+
+    if passing_stats is None:
+        st.error("Passing stats not loaded")
+        return
+
+    season_stats = passing_stats[passing_stats['season'] == 2025].copy()
+    if season_stats.empty:
+        st.info("No 2025 season data available yet")
+        return
+
+    season_totals = season_stats.groupby(['player_name', 'team'], observed=True).agg({
+        'passing_yards': 'sum',
+        'pass_tds': 'sum',
+        'completions': 'sum',
+        'attempts': 'sum',
+        'interceptions': 'sum',
+        'game_id': 'count'
+    }).reset_index()
+
+    season_totals.rename(columns={'game_id': 'games_played'}, inplace=True)
+    season_totals['yards_per_game'] = season_totals['passing_yards'] / season_totals['games_played']
+    season_totals['completion_pct'] = (season_totals['completions'] / season_totals['attempts'] * 100).round(1)
+
+    players_df = load_players()
+    if players_df is not None:
+        season_totals = season_totals.merge(
+            players_df[['short_name', 'position']],
+            left_on='player_name',
+            right_on='short_name',
+            how='left'
+        )
+        season_totals = season_totals.drop('short_name', axis=1)
+    if 'position' not in season_totals.columns:
+        season_totals['position'] = ''
+
+    season_totals = season_totals.sort_values('passing_yards', ascending=False).head(30)
+
+    display_df = season_totals[[
+        'player_name', 'position', 'team', 'games_played', 'passing_yards', 'yards_per_game',
+        'pass_tds', 'interceptions', 'completions', 'attempts', 'completion_pct'
+    ]].copy()
+    display_df['team'] = display_df['team'].apply(expand_team)
+    display_df.columns = ['Player', 'Pos', 'Team', 'GP', 'Total Yds', 'Yds/G', 'TDs', 'INT', 'Comp', 'Att', 'Comp%']
+    display_df['Total Yds'] = display_df['Total Yds'].astype(int)
+    display_df['Yds/G'] = display_df['Yds/G'].round(1)
+
+    st.dataframe(display_df, width='stretch', height=600, hide_index=True)
+    st.caption("Top 30 QBs by total passing yards (2025 season)")
+
+
+def render_rb_season_leaders(rushing_stats):
+    """Render the 2025 season rushing leaderboard (RBs)."""
+    st.subheader("🏆 2025 Season Leaders - Running Backs")
+
+    if rushing_stats is None:
+        st.error("Rushing stats not loaded")
+        return
+
+    season_stats = rushing_stats[rushing_stats['season'] == 2025].copy()
+    if season_stats.empty:
+        st.info("No 2025 season data available yet")
+        return
+
+    season_totals = season_stats.groupby(['player_name', 'team'], observed=True).agg({
+        'rushing_yards': 'sum',
+        'rush_tds': 'sum',
+        'rush_attempts': 'sum',
+        'game_id': 'count'
+    }).reset_index()
+
+    season_totals.rename(columns={'game_id': 'games_played'}, inplace=True)
+    season_totals['yards_per_game'] = season_totals['rushing_yards'] / season_totals['games_played']
+    season_totals['yards_per_carry'] = (season_totals['rushing_yards'] / season_totals['rush_attempts']).round(1)
+    season_totals['att_per_game'] = (season_totals['rush_attempts'] / season_totals['games_played']).round(1)
+
+    players_df = load_players()
+    if players_df is not None:
+        season_totals = season_totals.merge(
+            players_df[['short_name', 'position']],
+            left_on='player_name',
+            right_on='short_name',
+            how='left'
+        )
+        season_totals = season_totals.drop('short_name', axis=1)
+
+    season_totals = season_totals.sort_values('rushing_yards', ascending=False).head(30)
+
+    display_df = season_totals[[
+        'player_name', 'position', 'team', 'games_played', 'rushing_yards', 'yards_per_game',
+        'rush_tds', 'rush_attempts', 'yards_per_carry', 'att_per_game'
+    ]].copy()
+    display_df['team'] = display_df['team'].apply(expand_team)
+    display_df.columns = ['Player', 'Pos', 'Team', 'GP', 'Total Yds', 'Yds/G', 'TDs', 'Attempts', 'YPC', 'Att/G']
+    display_df['Total Yds'] = display_df['Total Yds'].astype(int)
+    display_df['Yds/G'] = display_df['Yds/G'].round(1)
+
+    st.dataframe(display_df, width='stretch', height=600, hide_index=True)
+    st.caption("Top 30 RBs by total rushing yards (2025 season)")
+
+
+def render_wr_season_leaders(receiving_stats):
+    """Render the 2025 season receiving leaderboard (WRs/TEs)."""
+    st.subheader("🏆 2025 Season Leaders - Wide Receivers & Tight Ends")
+
+    if receiving_stats is None:
+        st.error("Receiving stats not loaded")
+        return
+
+    season_stats = receiving_stats[receiving_stats['season'] == 2025].copy()
+    if season_stats.empty:
+        st.info("No 2025 season data available yet")
+        return
+
+    season_totals = season_stats.groupby(['player_name', 'team'], observed=True).agg({
+        'receiving_yards': 'sum',
+        'receptions': 'sum',
+        'rec_tds': 'sum',
+        'targets': 'sum',
+        'game_id': 'count'
+    }).reset_index()
+
+    season_totals.rename(columns={'game_id': 'games_played'}, inplace=True)
+    season_totals['yards_per_game'] = season_totals['receiving_yards'] / season_totals['games_played']
+    season_totals['rec_per_game'] = (season_totals['receptions'] / season_totals['games_played']).round(1)
+    season_totals['yards_per_rec'] = (season_totals['receiving_yards'] / season_totals['receptions']).round(1)
+    season_totals['catch_rate'] = (season_totals['receptions'] / season_totals['targets'] * 100).round(1)
+
+    players_df = load_players()
+    if players_df is not None:
+        season_totals = season_totals.merge(
+            players_df[['short_name', 'position']],
+            left_on='player_name',
+            right_on='short_name',
+            how='left'
+        )
+        season_totals = season_totals.drop('short_name', axis=1)
+
+    season_totals = season_totals.sort_values('receiving_yards', ascending=False).head(40)
+
+    display_df = season_totals[[
+        'player_name', 'position', 'team', 'games_played', 'receiving_yards', 'yards_per_game',
+        'receptions', 'rec_tds', 'targets', 'yards_per_rec', 'catch_rate'
+    ]].copy()
+    display_df['team'] = display_df['team'].apply(expand_team)
+    display_df.columns = ['Player', 'Pos', 'Team', 'GP', 'Total Yds', 'Yds/G', 'Rec', 'TDs', 'Targets', 'YPR', 'Catch%']
+    display_df['Total Yds'] = display_df['Total Yds'].astype(int)
+    display_df['Yds/G'] = display_df['Yds/G'].round(1)
+
+    st.dataframe(display_df, width='stretch', height=600, hide_index=True)
+    st.caption("Top 40 WRs/TEs by total receiving yards (2025 season)")
+
+
 # ============================================================================
 # MAIN PAGE
 # ============================================================================
@@ -423,12 +635,9 @@ def main():
         st.info(f"📅 **{len(upcoming)} upcoming games** this week")
     
     # Main tabs
-    tab1, tab2, tab3, tab4, tab5, tab6 = st.tabs([
+    tab1, tab2, tab6 = st.tabs([
         "⭐ Top Picks",
         "📊 DK Pick 6 Calculator",
-        "🎯 Top QBs",
-        "🏃 Top RBs", 
-        "🙌 Top WRs/TEs",
         "🔍 Player Search"
     ])
     
@@ -506,61 +715,17 @@ def main():
             
             # Display
             if not filtered.empty:
-                # Format display columns
-                display_df = filtered.copy()
-                # Expand team abbreviations to full names — display layer only;
-                # internal filtering still uses abbreviations on filtered/predictions.
-                display_df['team'] = display_df['team'].apply(expand_team)
-                display_df['opponent'] = display_df['opponent'].apply(expand_team)
-                display_df['Confidence'] = display_df['confidence'].apply(lambda x: f"{x:.1%}")
-                display_df['Recommendation'] = display_df.apply(
-                    lambda row: f"{row['recommendation']} {row['line_value']:.1f}", axis=1
-                )
-                display_df['Tier'] = display_df['confidence'].apply(
-                    lambda x: '🔥 Elite' if x >= 0.65 else ('💪 Strong' if x >= 0.60 else '✅ Good')
-                )
-                display_df['Last 3 Avg'] = display_df['avg_L3'].apply(lambda x: f"{x:.1f}")
-                display_df['Last 5 Avg'] = display_df['avg_L5'].apply(lambda x: f"{x:.1f}")
-                display_df['Last 10 Avg'] = display_df['avg_L10'].apply(lambda x: f"{x:.1f}")
-                display_df['Defense Rank'] = display_df['opponent_def_rank'].apply(
-                    lambda x: f"#{int(x)}/32" + (" 🛡️" if x <= 8 else (" ⚠️" if x >= 24 else ""))
-                )
-
                 # --- Model Reliability badge (additive, does not touch Tier) ---
                 wf_metrics = load_walk_forward_metrics()
                 if not wf_metrics:
                     st.caption("⚪ Reliability data not available (walk_forward_metrics.csv not found).")
-                def _model_name_from_row(row):
-                    prop = row.get('prop_type', '')
-                    lt = row.get('line_type', '')
-                    return get_reliability_badge(f"{prop}_{lt}", wf_metrics)
-                display_df['Model Reliability'] = display_df.apply(_model_name_from_row, axis=1)
 
-                # Add injury information if available
-                if 'injury_note' in display_df.columns:
-                    display_df['Injury Status'] = display_df['injury_note'].fillna('')
-                else:
-                    display_df['Injury Status'] = ''
+                display_df, show_cols, rename_map = format_predictions_display(filtered, wf_metrics)
 
-                # Select columns to show
-                show_cols = [
-                    'display_name', 'position', 'team', 'opponent', 'Defense Rank', 'trend', 'prop_type',
-                    'Recommendation', 'Confidence', 'Tier', 'Model Reliability',
-                    'Last 3 Avg', 'Last 5 Avg', 'Last 10 Avg', 'weather_conditions', 'Injury Status'
-                ]
-                
                 height = get_dataframe_height(display_df[show_cols])
 
                 st.dataframe(
-                    display_df[show_cols].rename(columns={
-                        'display_name': 'Player',
-                        'position': 'Pos',
-                        'team': 'Team',
-                        'opponent': 'Opp',
-                        'trend': 'Trend',
-                        'prop_type': 'Prop Type',
-                        'weather_conditions': 'Weather'
-                    }),
+                    display_df[show_cols].rename(columns=rename_map),
                     width='stretch',
                     height=height,
                     hide_index=True
@@ -1094,471 +1259,322 @@ def main():
                 """)
     
     # ========================================================================
-    # TAB 3: Top QBs (Season Leaders)
-    # ========================================================================
-    with tab3:
-        st.subheader("🏆 2025 Season Leaders - Quarterbacks")
-        
-        if passing_stats is not None:
-            # Filter to 2025 season
-            season_stats = passing_stats[passing_stats['season'] == 2025].copy()
-            
-            if not season_stats.empty:
-                # Aggregate to season totals per player
-                season_totals = season_stats.groupby(['player_name', 'team'], observed=True).agg({
-                    'passing_yards': 'sum',
-                    'pass_tds': 'sum',
-                    'completions': 'sum',
-                    'attempts': 'sum',
-                    'interceptions': 'sum',
-                    'game_id': 'count'  # Games played
-                }).reset_index()
-                
-                season_totals.rename(columns={'game_id': 'games_played'}, inplace=True)
-                
-                # Calculate per-game averages
-                season_totals['yards_per_game'] = season_totals['passing_yards'] / season_totals['games_played']
-                season_totals['completion_pct'] = (season_totals['completions'] / season_totals['attempts'] * 100).round(1)
-                
-                # Add position information
-                players_df = load_players()
-                if players_df is not None:
-                    season_totals = season_totals.merge(
-                        players_df[['short_name', 'position']], 
-                        left_on='player_name', 
-                        right_on='short_name', 
-                        how='left'
-                    )
-                    season_totals = season_totals.drop('short_name', axis=1)
-                # Ensure `position` exists for downstream display (fallback to empty string)
-                if 'position' not in season_totals.columns:
-                    season_totals['position'] = ''
-                # Ensure `position` exists for downstream display (fallback to empty string)
-                if 'position' not in season_totals.columns:
-                    season_totals['position'] = ''
-                # Ensure `position` exists for downstream display (fallback to empty string)
-                if 'position' not in season_totals.columns:
-                    season_totals['position'] = ''
-                
-                # Sort by total yards
-                season_totals = season_totals.sort_values('passing_yards', ascending=False).head(30)
-                
-                # Create display dataframe
-                display_df = season_totals[[
-                    'player_name', 'position', 'team', 'games_played', 'passing_yards', 'yards_per_game',
-                    'pass_tds', 'interceptions', 'completions', 'attempts', 'completion_pct'
-                ]].copy()
-                display_df['team'] = display_df['team'].apply(expand_team)
-                
-                # Rename columns
-                display_df.columns = [
-                    'Player', 'Pos', 'Team', 'GP', 'Total Yds', 'Yds/G', 
-                    'TDs', 'INT', 'Comp', 'Att', 'Comp%'
-                ]
-                
-                # Format numbers
-                display_df['Total Yds'] = display_df['Total Yds'].astype(int)
-                display_df['Yds/G'] = display_df['Yds/G'].round(1)
-                
-                st.dataframe(
-                    display_df,
-                    width='stretch',
-                    height=600,
-                    hide_index=True
-                )
-                
-                st.caption(f"Top 30 QBs by total passing yards (2025 season)")
-            else:
-                st.info("No 2025 season data available yet")
-        else:
-            st.error("Passing stats not loaded")
-    
-    # ========================================================================
-    # TAB 4: Top RBs (Season Leaders)
-    # ========================================================================
-    with tab4:
-        st.subheader("🏆 2025 Season Leaders - Running Backs")
-        
-        if rushing_stats is not None:
-            # Filter to 2025 season
-            season_stats = rushing_stats[rushing_stats['season'] == 2025].copy()
-            
-            if not season_stats.empty:
-                # Aggregate to season totals per player
-                season_totals = season_stats.groupby(['player_name', 'team'], observed=True).agg({
-                    'rushing_yards': 'sum',
-                    'rush_tds': 'sum',
-                    'rush_attempts': 'sum',
-                    'game_id': 'count'
-                }).reset_index()
-                
-                season_totals.rename(columns={'game_id': 'games_played'}, inplace=True)
-                
-                # Calculate per-game and efficiency stats
-                season_totals['yards_per_game'] = season_totals['rushing_yards'] / season_totals['games_played']
-                season_totals['yards_per_carry'] = (season_totals['rushing_yards'] / season_totals['rush_attempts']).round(1)
-                season_totals['att_per_game'] = (season_totals['rush_attempts'] / season_totals['games_played']).round(1)
-                
-                # Add position information
-                players_df = load_players()
-                if players_df is not None:
-                    season_totals = season_totals.merge(
-                        players_df[['short_name', 'position']], 
-                        left_on='player_name', 
-                        right_on='short_name', 
-                        how='left'
-                    )
-                    season_totals = season_totals.drop('short_name', axis=1)
-                
-                # Sort by total yards
-                season_totals = season_totals.sort_values('rushing_yards', ascending=False).head(30)
-                
-                # Create display dataframe
-                display_df = season_totals[[
-                    'player_name', 'position', 'team', 'games_played', 'rushing_yards', 'yards_per_game',
-                    'rush_tds', 'rush_attempts', 'yards_per_carry', 'att_per_game'
-                ]].copy()
-                display_df['team'] = display_df['team'].apply(expand_team)
-                
-                # Rename columns
-                display_df.columns = [
-                    'Player', 'Pos', 'Team', 'GP', 'Total Yds', 'Yds/G',
-                    'TDs', 'Attempts', 'YPC', 'Att/G'
-                ]
-                
-                # Format numbers
-                display_df['Total Yds'] = display_df['Total Yds'].astype(int)
-                display_df['Yds/G'] = display_df['Yds/G'].round(1)
-                
-                st.dataframe(
-                    display_df,
-                    width='stretch',
-                    height=600,
-                    hide_index=True
-                )
-                
-                st.caption(f"Top 30 RBs by total rushing yards (2025 season)")
-            else:
-                st.info("No 2025 season data available yet")
-        else:
-            st.error("Rushing stats not loaded")
-    
-    # ========================================================================
-    # TAB 5: Top WRs/TEs (Season Leaders)
-    # ========================================================================
-    with tab5:
-        st.subheader("🏆 2025 Season Leaders - Wide Receivers & Tight Ends")
-        
-        if receiving_stats is not None:
-            # Filter to 2025 season
-            season_stats = receiving_stats[receiving_stats['season'] == 2025].copy()
-            
-            if not season_stats.empty:
-                # Aggregate to season totals per player
-                season_totals = season_stats.groupby(['player_name', 'team'], observed=True).agg({
-                    'receiving_yards': 'sum',
-                    'receptions': 'sum',
-                    'rec_tds': 'sum',
-                    'targets': 'sum',
-                    'game_id': 'count'
-                }).reset_index()
-                
-                season_totals.rename(columns={'game_id': 'games_played'}, inplace=True)
-                
-                # Calculate per-game and efficiency stats
-                season_totals['yards_per_game'] = season_totals['receiving_yards'] / season_totals['games_played']
-                season_totals['rec_per_game'] = (season_totals['receptions'] / season_totals['games_played']).round(1)
-                season_totals['yards_per_rec'] = (season_totals['receiving_yards'] / season_totals['receptions']).round(1)
-                season_totals['catch_rate'] = (season_totals['receptions'] / season_totals['targets'] * 100).round(1)
-                
-                # Add position information
-                players_df = load_players()
-                if players_df is not None:
-                    season_totals = season_totals.merge(
-                        players_df[['short_name', 'position']], 
-                        left_on='player_name', 
-                        right_on='short_name', 
-                        how='left'
-                    )
-                    season_totals = season_totals.drop('short_name', axis=1)
-                
-                # Sort by total yards
-                season_totals = season_totals.sort_values('receiving_yards', ascending=False).head(40)
-                
-                # Create display dataframe
-                display_df = season_totals[[
-                    'player_name', 'position', 'team', 'games_played', 'receiving_yards', 'yards_per_game',
-                    'receptions', 'rec_tds', 'targets', 'yards_per_rec', 'catch_rate'
-                ]].copy()
-                display_df['team'] = display_df['team'].apply(expand_team)
-                
-                # Rename columns
-                display_df.columns = [
-                    'Player', 'Pos', 'Team', 'GP', 'Total Yds', 'Yds/G',
-                    'Rec', 'TDs', 'Targets', 'YPR', 'Catch%'
-                ]
-                
-                # Format numbers
-                display_df['Total Yds'] = display_df['Total Yds'].astype(int)
-                display_df['Yds/G'] = display_df['Yds/G'].round(1)
-                
-                st.dataframe(
-                    display_df,
-                    width='stretch',
-                    height=600,
-                    hide_index=True
-                )
-                
-                st.caption(f"Top 40 WRs/TEs by total receiving yards (2025 season)")
-            else:
-                st.info("No 2025 season data available yet")
-        else:
-            st.error("Receiving stats not loaded")
-    
-    # ========================================================================
-    # TAB 6: Player Search
+    # TAB 6: Player Search (Prop Finder + Season Stats/Leaders)
     # ========================================================================
     with tab6:
-        st.subheader("Search Individual Player Stats")
-        
-        # Get unique player IDs from stats
-        all_player_ids = []
-        if passing_stats is not None:
-            all_player_ids.extend(passing_stats['player_id'].unique())
-        if rushing_stats is not None:
-            all_player_ids.extend(rushing_stats['player_id'].unique())
-        if receiving_stats is not None:
-            all_player_ids.extend(receiving_stats['player_id'].unique())
-        
-        all_player_ids = list(set(all_player_ids))
-        
-        # Build player options with full names
-        if players is not None and len(all_player_ids) > 0:
-            player_options = []
-            for player_id in all_player_ids:
-                match = players[players['gsis_id'] == player_id]
-                if not match.empty:
-                    display_name = match.iloc[0]['display_name']
-                    last_name = match.iloc[0]['last_name']
-                    # Only add if we found a valid display name
-                    if pd.notna(display_name) and display_name:
-                        player_options.append((display_name, player_id, last_name))
-            
-            # Sort by last name
-            player_options = sorted(player_options, key=lambda x: x[2] if pd.notna(x[2]) else '')
-            display_names = [opt[0] for opt in player_options]
-            player_ids = [opt[1] for opt in player_options]
-        else:
-            display_names = []
-            player_ids = []
-        
-        if display_names:
-            # Add search filter
-            search_term = st.text_input("Search for a player (type to filter)", "", key="player_search_filter")
-            
-            # Filter players based on search term
-            if search_term:
-                filtered_indices = [i for i, name in enumerate(display_names) 
-                                   if search_term.lower() in name.lower()]
-                filtered_display_names = [display_names[i] for i in filtered_indices]
-                filtered_player_ids = [player_ids[i] for i in filtered_indices]
+        search_mode = st.radio(
+            "View",
+            ["🎯 Prop Finder", "📊 Season Stats & Leaders"],
+            horizontal=True,
+            key="player_search_mode"
+        )
+        st.markdown("---")
+
+    # ------------------------------------------------------------------
+    # 6A: Prop Finder — look up a single player's current prop predictions
+    # ------------------------------------------------------------------
+    if search_mode == "🎯 Prop Finder":
+        with tab6:
+            st.subheader("🎯 Player Prop Finder")
+            st.caption("Search a player to see all of their current-week prop predictions — confidence, tier, model reliability, injury status, weather, and more.")
+
+            if predictions is not None and not predictions.empty:
+                player_name_options = sorted(predictions['display_name'].dropna().unique().tolist())
+
+                search_term_pf = st.text_input("Search for a player (type to filter)", "", key="prop_finder_search")
+                if search_term_pf:
+                    filtered_names_pf = [n for n in player_name_options if search_term_pf.lower() in n.lower()]
+                else:
+                    filtered_names_pf = player_name_options
+
+                if filtered_names_pf:
+                    selected_player_pf = st.selectbox("Select Player", filtered_names_pf, key="prop_finder_select")
+
+                    player_predictions = predictions[predictions['display_name'] == selected_player_pf].copy()
+
+                    if not player_predictions.empty:
+                        wf_metrics = load_walk_forward_metrics()
+                        display_df, show_cols, rename_map = format_predictions_display(player_predictions, wf_metrics)
+
+                        height = get_dataframe_height(display_df[show_cols])
+                        st.dataframe(
+                            display_df[show_cols].rename(columns=rename_map),
+                            width='stretch',
+                            height=height,
+                            hide_index=True
+                        )
+
+                        injury_vals = player_predictions['injury_note'].dropna()
+                        injury_vals = injury_vals[injury_vals != '']
+                        if not injury_vals.empty:
+                            st.warning(f"⚕️ Injury note: {injury_vals.iloc[0]}")
+
+                        st.caption(f"Showing {len(player_predictions)} prop prediction(s) for {selected_player_pf} this week")
+                    else:
+                        st.info(f"No current-week prop predictions available for {selected_player_pf}.")
+                else:
+                    st.info("No players match your search")
             else:
-                filtered_display_names = display_names
-                filtered_player_ids = player_ids
+                st.warning("⚠️ No predictions available. Generate predictions first (see the Top Picks tab for instructions).")
+
+    # ------------------------------------------------------------------
+    # 6B: Season Stats & Leaders — raw game logs + season leaderboards
+    # ------------------------------------------------------------------
+    else:
+        with tab6:
+            with st.expander("🏆 Season Leaders (2025)", expanded=False):
+                leader_tab_qb, leader_tab_rb, leader_tab_wr = st.tabs(["Quarterbacks", "Running Backs", "WRs/TEs"])
+
+                with leader_tab_qb:
+                    render_qb_season_leaders(passing_stats)
+
+                with leader_tab_rb:
+                    render_rb_season_leaders(rushing_stats)
+
+                with leader_tab_wr:
+                    render_wr_season_leaders(receiving_stats)
+
+            st.markdown("---")
+            st.subheader("Search Individual Player Stats")
+        
+            # Get unique player IDs from stats
+            all_player_ids = []
+            if passing_stats is not None:
+                all_player_ids.extend(passing_stats['player_id'].unique())
+            if rushing_stats is not None:
+                all_player_ids.extend(rushing_stats['player_id'].unique())
+            if receiving_stats is not None:
+                all_player_ids.extend(receiving_stats['player_id'].unique())
+        
+            all_player_ids = list(set(all_player_ids))
+        
+            # Build player options with full names
+            if players is not None and len(all_player_ids) > 0:
+                player_options = []
+                for player_id in all_player_ids:
+                    match = players[players['gsis_id'] == player_id]
+                    if not match.empty:
+                        display_name = match.iloc[0]['display_name']
+                        last_name = match.iloc[0]['last_name']
+                        # Only add if we found a valid display name
+                        if pd.notna(display_name) and display_name:
+                            player_options.append((display_name, player_id, last_name))
             
-            if filtered_display_names:
-                selected_display = st.selectbox("Select Player", filtered_display_names, key="player_search")
-                
-                # Get the corresponding player_id
-                selected_index = filtered_display_names.index(selected_display)
-                selected_player_id = filtered_player_ids[selected_index]
+                # Sort by last name
+                player_options = sorted(player_options, key=lambda x: x[2] if pd.notna(x[2]) else '')
+                display_names = [opt[0] for opt in player_options]
+                player_ids = [opt[1] for opt in player_options]
             else:
-                st.info("No players match your search")
-                selected_player_id = None
+                display_names = []
+                player_ids = []
+        
+            if display_names:
+                # Add search filter
+                search_term = st.text_input("Search for a player (type to filter)", "", key="player_search_filter")
             
-            if selected_player_id:
-                # Get player position
-                player_info = players[players['gsis_id'] == selected_player_id]
-                if not player_info.empty:
-                    player_position = player_info.iloc[0]['position']
-                    st.markdown(f"**Position:** {player_position}")
+                # Filter players based on search term
+                if search_term:
+                    filtered_indices = [i for i, name in enumerate(display_names) 
+                                       if search_term.lower() in name.lower()]
+                    filtered_display_names = [display_names[i] for i in filtered_indices]
+                    filtered_player_ids = [player_ids[i] for i in filtered_indices]
+                else:
+                    filtered_display_names = display_names
+                    filtered_player_ids = player_ids
+            
+                if filtered_display_names:
+                    selected_display = st.selectbox("Select Player", filtered_display_names, key="player_search")
                 
-                col1, col2, col3 = st.columns(3)
+                    # Get the corresponding player_id
+                    selected_index = filtered_display_names.index(selected_display)
+                    selected_player_id = filtered_player_ids[selected_index]
+                else:
+                    st.info("No players match your search")
+                    selected_player_id = None
+            
+                if selected_player_id:
+                    # Get player position
+                    player_info = players[players['gsis_id'] == selected_player_id]
+                    if not player_info.empty:
+                        player_position = player_info.iloc[0]['position']
+                        st.markdown(f"**Position:** {player_position}")
                 
-                with col1:
-                    st.markdown("**Passing Stats**")
-                    if passing_stats is not None:
-                        player_pass = passing_stats[passing_stats['player_id'] == selected_player_id]
-                        if not player_pass.empty:
-                            # Filter to 2025 season only
-                            if 'season' in player_pass.columns:
-                                player_pass = player_pass[player_pass['season'] == 2025]
-                            display_cols = ['week', 'opponent', 'passing_yards', 'pass_tds', 'completions', 'attempts', 'interceptions']
-                            available = [c for c in display_cols if c in player_pass.columns]
-                            pass_disp = player_pass[available].copy()
-                            pass_disp['opponent'] = pass_disp['opponent'].apply(expand_team)
-                            st.dataframe(
-                                pass_disp.rename(columns={
-                                    'week': 'Wk',
-                                    'opponent': 'Opp',
-                                    'passing_yards': 'Yds',
-                                    'pass_tds': 'TDs',
-                                    'completions': 'Comp',
-                                    'attempts': 'Att',
-                                    'interceptions': 'INT'
-                                }),
-                                width='stretch',
-                                hide_index=True
-                            )
-                        else:
-                            st.info("No passing stats")
-                    else:
-                        st.info("Data not loaded")
+                    col1, col2, col3 = st.columns(3)
                 
-                with col2:
-                    st.markdown("**Rushing Stats**")
-                    if rushing_stats is not None:
-                        player_rush = rushing_stats[rushing_stats['player_id'] == selected_player_id]
-                        if not player_rush.empty:
-                            # Filter to 2025 season only
-                            if 'season' in player_rush.columns:
-                                player_rush = player_rush[player_rush['season'] == 2025]
-                            display_cols = ['week', 'opponent', 'rushing_yards', 'rush_tds', 'rush_attempts']
-                            available = [c for c in display_cols if c in player_rush.columns]
-                            rush_disp = player_rush[available].copy()
-                            rush_disp['opponent'] = rush_disp['opponent'].apply(expand_team)
-                            st.dataframe(
-                                rush_disp.rename(columns={
-                                    'week': 'Wk',
-                                    'opponent': 'Opp',
-                                    'rushing_yards': 'Yds',
-                                    'rush_tds': 'TDs',
-                                    'rush_attempts': 'Att'
-                                }),
-                                width='stretch',
-                                hide_index=True
-                            )
-                        else:
-                            st.info("No rushing stats")
-                    else:
-                        st.info("Data not loaded")
-                
-                with col3:
-                    st.markdown("**Receiving Stats**")
-                    if receiving_stats is not None:
-                        player_rec = receiving_stats[receiving_stats['player_id'] == selected_player_id]
-                        if not player_rec.empty:
-                            # Filter to 2025 season only
-                            if 'season' in player_rec.columns:
-                                player_rec = player_rec[player_rec['season'] == 2025]
-                            display_cols = ['week', 'opponent', 'receiving_yards', 'receptions', 'rec_tds', 'targets']
-                            available = [c for c in display_cols if c in player_rec.columns]
-                            rec_disp = player_rec[available].copy()
-                            rec_disp['opponent'] = rec_disp['opponent'].apply(expand_team)
-                            st.dataframe(
-                                rec_disp.rename(columns={
-                                    'week': 'Wk',
-                                    'opponent': 'Opp',
-                                    'receiving_yards': 'Yds',
-                                    'receptions': 'Rec',
-                                    'rec_tds': 'TDs',
-                                    'targets': 'Targets'
-                                }),
-                                width='stretch',
-                                hide_index=True
-                            )
-                        else:
-                            st.info("No receiving stats")
-                    else:
-                        st.info("Data not loaded")
-                
-                # Season Averages Section
-                st.markdown("---")
-                st.markdown("### 📊 Season Averages (2025)")
-                
-                avg_col1, avg_col2, avg_col3 = st.columns(3)
-                
-                with avg_col1:
-                    st.markdown("**Passing Averages**")
-                    if passing_stats is not None:
-                        player_pass = passing_stats[passing_stats['player_id'] == selected_player_id]
-                        if not player_pass.empty and 'season' in player_pass.columns:
-                            player_pass_2025 = player_pass[player_pass['season'] == 2025]
-                            if not player_pass_2025.empty:
-                                games = len(player_pass_2025)
-                                avg_yards = player_pass_2025['passing_yards'].mean()
-                                avg_tds = player_pass_2025['pass_tds'].mean()
-                                avg_comp = player_pass_2025['completions'].mean()
-                                avg_att = player_pass_2025['attempts'].mean()
-                                avg_int = player_pass_2025['interceptions'].mean()
-                                comp_pct = (player_pass_2025['completions'].sum() / player_pass_2025['attempts'].sum() * 100) if player_pass_2025['attempts'].sum() > 0 else 0
-                                
-                                st.metric("Games Played", f"{games}")
-                                st.metric("Yards/Game", f"{avg_yards:.1f}")
-                                st.metric("TDs/Game", f"{avg_tds:.2f}")
-                                st.metric("Comp/Att", f"{avg_comp:.1f}/{avg_att:.1f}")
-                                st.metric("Comp %", f"{comp_pct:.1f}%")
-                                st.metric("INT/Game", f"{avg_int:.2f}")
+                    with col1:
+                        st.markdown("**Passing Stats**")
+                        if passing_stats is not None:
+                            player_pass = passing_stats[passing_stats['player_id'] == selected_player_id]
+                            if not player_pass.empty:
+                                # Filter to 2025 season only
+                                if 'season' in player_pass.columns:
+                                    player_pass = player_pass[player_pass['season'] == 2025]
+                                display_cols = ['week', 'opponent', 'passing_yards', 'pass_tds', 'completions', 'attempts', 'interceptions']
+                                available = [c for c in display_cols if c in player_pass.columns]
+                                pass_disp = player_pass[available].copy()
+                                pass_disp['opponent'] = pass_disp['opponent'].apply(expand_team)
+                                st.dataframe(
+                                    pass_disp.rename(columns={
+                                        'week': 'Wk',
+                                        'opponent': 'Opp',
+                                        'passing_yards': 'Yds',
+                                        'pass_tds': 'TDs',
+                                        'completions': 'Comp',
+                                        'attempts': 'Att',
+                                        'interceptions': 'INT'
+                                    }),
+                                    width='stretch',
+                                    hide_index=True
+                                )
                             else:
-                                st.info("No 2025 passing stats")
+                                st.info("No passing stats")
                         else:
-                            st.info("No passing stats")
-                    else:
-                        st.info("Data not loaded")
+                            st.info("Data not loaded")
                 
-                with avg_col2:
-                    st.markdown("**Rushing Averages**")
-                    if rushing_stats is not None:
-                        player_rush = rushing_stats[rushing_stats['player_id'] == selected_player_id]
-                        if not player_rush.empty and 'season' in player_rush.columns:
-                            player_rush_2025 = player_rush[player_rush['season'] == 2025]
-                            if not player_rush_2025.empty:
-                                games = len(player_rush_2025)
-                                avg_yards = player_rush_2025['rushing_yards'].mean()
-                                avg_tds = player_rush_2025['rush_tds'].mean()
-                                avg_att = player_rush_2025['rush_attempts'].mean()
-                                ypc = (player_rush_2025['rushing_yards'].sum() / player_rush_2025['rush_attempts'].sum()) if player_rush_2025['rush_attempts'].sum() > 0 else 0
-                                
-                                st.metric("Games Played", f"{games}")
-                                st.metric("Yards/Game", f"{avg_yards:.1f}")
-                                st.metric("TDs/Game", f"{avg_tds:.2f}")
-                                st.metric("Att/Game", f"{avg_att:.1f}")
-                                st.metric("YPC", f"{ypc:.2f}")
+                    with col2:
+                        st.markdown("**Rushing Stats**")
+                        if rushing_stats is not None:
+                            player_rush = rushing_stats[rushing_stats['player_id'] == selected_player_id]
+                            if not player_rush.empty:
+                                # Filter to 2025 season only
+                                if 'season' in player_rush.columns:
+                                    player_rush = player_rush[player_rush['season'] == 2025]
+                                display_cols = ['week', 'opponent', 'rushing_yards', 'rush_tds', 'rush_attempts']
+                                available = [c for c in display_cols if c in player_rush.columns]
+                                rush_disp = player_rush[available].copy()
+                                rush_disp['opponent'] = rush_disp['opponent'].apply(expand_team)
+                                st.dataframe(
+                                    rush_disp.rename(columns={
+                                        'week': 'Wk',
+                                        'opponent': 'Opp',
+                                        'rushing_yards': 'Yds',
+                                        'rush_tds': 'TDs',
+                                        'rush_attempts': 'Att'
+                                    }),
+                                    width='stretch',
+                                    hide_index=True
+                                )
                             else:
-                                st.info("No 2025 rushing stats")
+                                st.info("No rushing stats")
                         else:
-                            st.info("No rushing stats")
-                    else:
-                        st.info("Data not loaded")
+                            st.info("Data not loaded")
                 
-                with avg_col3:
-                    st.markdown("**Receiving Averages**")
-                    if receiving_stats is not None:
-                        player_rec = receiving_stats[receiving_stats['player_id'] == selected_player_id]
-                        if not player_rec.empty and 'season' in player_rec.columns:
-                            player_rec_2025 = player_rec[player_rec['season'] == 2025]
-                            if not player_rec_2025.empty:
-                                games = len(player_rec_2025)
-                                avg_yards = player_rec_2025['receiving_yards'].mean()
-                                avg_rec = player_rec_2025['receptions'].mean()
-                                avg_tds = player_rec_2025['rec_tds'].mean()
-                                avg_tgts = player_rec_2025['targets'].mean()
-                                ypr = (player_rec_2025['receiving_yards'].sum() / player_rec_2025['receptions'].sum()) if player_rec_2025['receptions'].sum() > 0 else 0
-                                catch_rate = (player_rec_2025['receptions'].sum() / player_rec_2025['targets'].sum() * 100) if player_rec_2025['targets'].sum() > 0 else 0
-                                
-                                st.metric("Games Played", f"{games}")
-                                st.metric("Yards/Game", f"{avg_yards:.1f}")
-                                st.metric("Rec/Game", f"{avg_rec:.1f}")
-                                st.metric("TDs/Game", f"{avg_tds:.2f}")
-                                st.metric("Targets/Game", f"{avg_tgts:.1f}")
-                                st.metric("YPR", f"{ypr:.2f}")
-                                st.metric("Catch Rate", f"{catch_rate:.1f}%")
+                    with col3:
+                        st.markdown("**Receiving Stats**")
+                        if receiving_stats is not None:
+                            player_rec = receiving_stats[receiving_stats['player_id'] == selected_player_id]
+                            if not player_rec.empty:
+                                # Filter to 2025 season only
+                                if 'season' in player_rec.columns:
+                                    player_rec = player_rec[player_rec['season'] == 2025]
+                                display_cols = ['week', 'opponent', 'receiving_yards', 'receptions', 'rec_tds', 'targets']
+                                available = [c for c in display_cols if c in player_rec.columns]
+                                rec_disp = player_rec[available].copy()
+                                rec_disp['opponent'] = rec_disp['opponent'].apply(expand_team)
+                                st.dataframe(
+                                    rec_disp.rename(columns={
+                                        'week': 'Wk',
+                                        'opponent': 'Opp',
+                                        'receiving_yards': 'Yds',
+                                        'receptions': 'Rec',
+                                        'rec_tds': 'TDs',
+                                        'targets': 'Targets'
+                                    }),
+                                    width='stretch',
+                                    hide_index=True
+                                )
                             else:
-                                st.info("No 2025 receiving stats")
+                                st.info("No receiving stats")
                         else:
-                            st.info("No receiving stats")
-                    else:
-                        st.info("Data not loaded")
+                            st.info("Data not loaded")
+                
+                    # Season Averages Section
+                    st.markdown("---")
+                    st.markdown("### 📊 Season Averages (2025)")
+                
+                    avg_col1, avg_col2, avg_col3 = st.columns(3)
+                
+                    with avg_col1:
+                        st.markdown("**Passing Averages**")
+                        if passing_stats is not None:
+                            player_pass = passing_stats[passing_stats['player_id'] == selected_player_id]
+                            if not player_pass.empty and 'season' in player_pass.columns:
+                                player_pass_2025 = player_pass[player_pass['season'] == 2025]
+                                if not player_pass_2025.empty:
+                                    games = len(player_pass_2025)
+                                    avg_yards = player_pass_2025['passing_yards'].mean()
+                                    avg_tds = player_pass_2025['pass_tds'].mean()
+                                    avg_comp = player_pass_2025['completions'].mean()
+                                    avg_att = player_pass_2025['attempts'].mean()
+                                    avg_int = player_pass_2025['interceptions'].mean()
+                                    comp_pct = (player_pass_2025['completions'].sum() / player_pass_2025['attempts'].sum() * 100) if player_pass_2025['attempts'].sum() > 0 else 0
+                                
+                                    st.metric("Games Played", f"{games}")
+                                    st.metric("Yards/Game", f"{avg_yards:.1f}")
+                                    st.metric("TDs/Game", f"{avg_tds:.2f}")
+                                    st.metric("Comp/Att", f"{avg_comp:.1f}/{avg_att:.1f}")
+                                    st.metric("Comp %", f"{comp_pct:.1f}%")
+                                    st.metric("INT/Game", f"{avg_int:.2f}")
+                                else:
+                                    st.info("No 2025 passing stats")
+                            else:
+                                st.info("No passing stats")
+                        else:
+                            st.info("Data not loaded")
+                
+                    with avg_col2:
+                        st.markdown("**Rushing Averages**")
+                        if rushing_stats is not None:
+                            player_rush = rushing_stats[rushing_stats['player_id'] == selected_player_id]
+                            if not player_rush.empty and 'season' in player_rush.columns:
+                                player_rush_2025 = player_rush[player_rush['season'] == 2025]
+                                if not player_rush_2025.empty:
+                                    games = len(player_rush_2025)
+                                    avg_yards = player_rush_2025['rushing_yards'].mean()
+                                    avg_tds = player_rush_2025['rush_tds'].mean()
+                                    avg_att = player_rush_2025['rush_attempts'].mean()
+                                    ypc = (player_rush_2025['rushing_yards'].sum() / player_rush_2025['rush_attempts'].sum()) if player_rush_2025['rush_attempts'].sum() > 0 else 0
+                                
+                                    st.metric("Games Played", f"{games}")
+                                    st.metric("Yards/Game", f"{avg_yards:.1f}")
+                                    st.metric("TDs/Game", f"{avg_tds:.2f}")
+                                    st.metric("Att/Game", f"{avg_att:.1f}")
+                                    st.metric("YPC", f"{ypc:.2f}")
+                                else:
+                                    st.info("No 2025 rushing stats")
+                            else:
+                                st.info("No rushing stats")
+                        else:
+                            st.info("Data not loaded")
+                
+                    with avg_col3:
+                        st.markdown("**Receiving Averages**")
+                        if receiving_stats is not None:
+                            player_rec = receiving_stats[receiving_stats['player_id'] == selected_player_id]
+                            if not player_rec.empty and 'season' in player_rec.columns:
+                                player_rec_2025 = player_rec[player_rec['season'] == 2025]
+                                if not player_rec_2025.empty:
+                                    games = len(player_rec_2025)
+                                    avg_yards = player_rec_2025['receiving_yards'].mean()
+                                    avg_rec = player_rec_2025['receptions'].mean()
+                                    avg_tds = player_rec_2025['rec_tds'].mean()
+                                    avg_tgts = player_rec_2025['targets'].mean()
+                                    ypr = (player_rec_2025['receiving_yards'].sum() / player_rec_2025['receptions'].sum()) if player_rec_2025['receptions'].sum() > 0 else 0
+                                    catch_rate = (player_rec_2025['receptions'].sum() / player_rec_2025['targets'].sum() * 100) if player_rec_2025['targets'].sum() > 0 else 0
+                                
+                                    st.metric("Games Played", f"{games}")
+                                    st.metric("Yards/Game", f"{avg_yards:.1f}")
+                                    st.metric("Rec/Game", f"{avg_rec:.1f}")
+                                    st.metric("TDs/Game", f"{avg_tds:.2f}")
+                                    st.metric("Targets/Game", f"{avg_tgts:.1f}")
+                                    st.metric("YPR", f"{ypr:.2f}")
+                                    st.metric("Catch Rate", f"{catch_rate:.1f}%")
+                                else:
+                                    st.info("No 2025 receiving stats")
+                            else:
+                                st.info("No receiving stats")
+                        else:
+                            st.info("Data not loaded")
     
     # Add footer to the page
     add_betting_oracle_footer()
