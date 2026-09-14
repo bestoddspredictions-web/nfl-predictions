@@ -157,7 +157,7 @@ def load_schedule():
     # Only predict the actionable current/next NFL week, not the full remaining season.
     # For a game that's already started or finished, prediction is no longer useful.
     now_utc = pd.Timestamp.now(tz='UTC')
-    cutoff = now_utc - pd.Timedelta(hours=12)
+    cutoff = now_utc - pd.Timedelta(minutes=15)
 
     future_games = df[df['game_date'] >= cutoff].copy()
 
