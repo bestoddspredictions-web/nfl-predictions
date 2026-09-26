@@ -1,724 +1,734 @@
 season,season_type,game_type,team,week,gsis_id,position,player_name,first_name,last_name,injury_type,report_secondary_injury,status,practice_primary_injury,practice_secondary_injury,practice_participation,scraped_at,source
-2026,REG,REG,ARI,1,00-0034381,LB,Josh Sweat,Josh,Sweat,,,Full,Not injury related - resting player,Knee,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,1,00-0035859,P,Blake Gillikin,Blake,Gillikin,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,1,00-0039007,CB,Garrett Williams,Garrett,Williams,Achilles,,Out,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,1,00-0039808,G,Isaiah Adams,Isaiah,Adams,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,1,00-0039864,S,Dadrion Taylor-Demerson,Dadrion,Taylor-Demerson,Ribs,,Out,Ribs,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,1,00-0040751,CB,Will Johnson,William,Johnson,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,1,00-0041027,RB,Jeremiyah Love,Jeremiyah,Love,Ankle,,Questionable,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0031279,T,Jake Matthews,Jacob,Matthews,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0031576,DE,Za'Darius Smith,Za'Darius,Smith,Shoulder,,Questionable,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0034371,DT,Da'Shawn Hand,Da'Shawn,Hand,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0035237,T,Jawaan Taylor,Jawaan,Taylor,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0036212,QB,Tua Tagovailoa,Tuanigamanuolepola,Tagovailoa,Oblique,,Out,Oblique,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0036354,G,Kyle Hinton,Kyle,Hinton,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0039859,DT,Brandon Dorlus,Brandon,Dorlus,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0039917,QB,Michael Penix Jr.,Michael,Penix,Knee,,Out,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0040156,CB,Billy Bowman Jr.,Billy,Bowman,Achilles,,Out,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0040687,T,Cameron Williams,Cameron,Williams,Ankle,,Out,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0041044,WR,Zachariah Branch,Zachariah,Branch,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,1,00-0041066,LB,Kendal Daniels,Kendal,Daniels,,,Full,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,1,00-0026190,DE,Calais Campbell,Calais,Campbell,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,1,00-0036130,DT,Nnamdi Madubuike,Justin,Madubuike,Neck,,Out,Neck,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,1,00-0039064,WR,Zay Flowers,Xavien,Flowers,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,1,00-0039792,WR,Devontez Walker,Devontez,Walker,Groin,,Questionable,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,1,00-0040069,LB,Teddye Buchanan,Teddye,Buchanan,Knee,,Out,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,1,00-0035537,RB,Ty Johnson,Ty,Johnson,Hamstring,,Questionable,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,1,00-0040192,CB,Jordan Hancock,Jordan,Hancock,Quadricep,,Questionable,Quadricep,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,1,00-0040724,DE,T.J. Sanders,Tanaeri,Sanders,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,1,00-0036903,DT,Bobby Brown III,Bobby,Brown,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,1,00-0037007,LB,Patrick Jones II,Patrick,Jones,Back,,Out,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,1,00-0039344,RB,Jonathon Brooks,Jonathon,Brooks,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,1,00-0031583,DT,Grady Jarrett,Grady,Jarrett,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,1,00-0032391,G,Joe Thuney,Joseph,Thuney,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,1,00-0033579,S,Xavier Woods,Xavier,Woods,Groin,,Questionable,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,1,00-0038416,QB,Tyson Bagent,Tyson,Bagent,Back,,Questionable,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,1,00-0039919,WR,Rome Odunze,Rome,Odunze,Calf,,Questionable,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,1,00-0040740,T,Ozzy Trapilo,Ozzy,Trapilo,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,1,00-0033523,DT,Jonathan Allen,Jonathan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,1,00-0034800,DT,B.J. Hill,Bobby,Hill,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,1,00-0035683,DT,Dexter Lawrence,Dexter,Lawrence,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,1,00-0036410,WR,Tee Higgins,Tamurice,Higgins,,,Full,Foot,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,1,00-0036900,WR,Ja'Marr Chase,Ja'Marr,Chase,,,DNP,Knee,Not injury related - resting player,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,1,00-0038549,CB,DJ Turner II,DJ,Turner,,,Limited,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,1,00-0040756,DE,Shemar Stewart,Shemar,Stewart,Knee,,Doubtful,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,1,00-0033131,DT,Maliek Collins,Maliek,Collins,,,Limited,Quadricep,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,1,00-0036953,G,Teven Jenkins,Teven,Jenkins,Back,,Out,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,1,00-0040579,LB,Carson Schwesinger,Carson,Schwesinger,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,1,00-0041073,C,Parker Brailsford,Parker,Brailsford,Thumb,,Questionable,Thumb,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,1,00-0033093,DT,Jonathan Bullard,Jonathan,Bullard,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,1,00-0037563,RB,Malik Davis,Malik,Davis,Hip,,Out,Hip,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,1,00-0038547,TE,Luke Schoonmaker,Luke,Schoonmaker,,,DNP,Not injury related - personal matter,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,1,00-0040017,T,Ajani Cornelius,Ajani,Cornelius,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,1,00-0038976,WR,Marvin Mims Jr.,Marvin,Mims,,,Full,Foot,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0038660,LB,Trevor Nowaske,Trevor,Nowaske,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0038820,S,Christian Izien,Christian,Izien,Groin,,Questionable,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0039396,DT,Mekhi Wingo,Mekhi,Wingo,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0039660,S,Thomas Harper,Thomas,Harper,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0039862,CB,Ennis Rakestraw Jr.,Ennis,Rakestraw,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0041441,DE,Derrick Moore,Derrick,Moore,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0041442,LB,Jimmy Rolder,James,Rolder,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,1,00-0041445,CB,Keith Abney II,Keith,Abney,,,Full,Hand,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0033109,DT,Javon Hargrave,Javon,Hargrave,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0036551,G,Aaron Banks,Aaron,Banks,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0037075,DT,Devonte Wyatt,Devonte,Wyatt,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0037817,T,Zach Bako-Bewele,Zach,Bako-Bewele,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0039812,LB,Ty'Ron Hopper,Ty'Ron,Hopper,Achilles,,Questionable,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0039904,T,Jordan Morgan,Jordan,Morgan,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0040010,LB,Barryn Sorrell,Barryn,Sorrell,,,Limited,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,1,00-0040016,DT,Warren Brinson,Warren,Brinson,Calf,,Out,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,1,00-0032071,T,Trent Brown,Trenton,Brown,,,Full,Wrist,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,1,00-0039108,DE,Will Anderson Jr.,William,Anderson,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,1,00-0041440,DT,Kayden McDonald,Kayden,McDonald,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,1,00-0041465,LB,Wade Woodaz,Wade,Woodaz,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0032378,DT,DeForest Buckner,DeForest,Buckner,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0033952,DT,Grover Stewart,Grover,Stewart,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0034573,CB,Charvarius Ward,Charvarius,Ward,,,Limited,Not injury related - resting player,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0037292,TE,Andrew Ogletree,Andrew,Ogletree,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0037664,WR,Alec Pierce,Alec,Pierce,,,Limited,Heel,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0039164,QB,Anthony Richardson,Anthony,Richardson,,,Full,Illness,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0039178,LB,Austin Ajiake,Austin,Ajiake,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0039876,C,Sedrick Van Pran-Granger,Sedrick,Van Pran-Granger,,,Full,Illness,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,1,00-0041043,S,A.J. Haulcy,Adari,Haulcy,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,1,00-0034960,WR,Jakobi Meyers,Jakobi,Meyers,,,Limited,Thumb,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,1,00-0036655,T,Cole Van Lanen,Cole,Van Lanen,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,1,00-0038934,T,Anton Harrison,Anton,Harrison,,,DNP,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,1,00-0040238,RB,LeQuint Allen Jr.,LeQuint,Allen,Hip,,Questionable,Hip,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0032762,DT,Chris Jones,Christopher,Jones,,,DNP,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0033873,QB,Patrick Mahomes,Patrick,Mahomes,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0036374,CB,L'Jarius Sneed,L'Jarius,Sneed,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0036660,G,Trey Smith,Henry,Smith,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0037208,LB,Jack Cochrane,Jack,Cochrane,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0038982,S,Chamarri Conner,Chamarri,Conner,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0039067,WR,Rashee Rice,Rashee,Rice,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0039894,WR,Xavier Worthy,Xavier,Worthy,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0040116,T,Josh Simmons,Josh,Simmons,Back,,Out,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0040640,DE,Ashton Gillotte,Ashton,Gillotte,,,Full,Foot,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,1,00-0041501,DE,R Mason Thomas,R Mason,Thomas,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,1,00-0031388,DE,Aaron Donald,Aaron,Donald,Not injury related - resting player,,Out,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,1,00-0033110,TE,Tyler Higbee,Tyler,Higbee,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,1,00-0033868,LB,Myles Garrett,Myles,Garrett,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,1,00-0036603,T,Alaric Jackson,Alaric,Jackson,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,1,00-0036672,LB,Grant Stuard,Grant,Stuard,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,1,00-0037195,CB,Jaylen Watson,Jaylen,Watson,,,Full,Toe,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,1,00-0039137,LB,Byron Young,Byron,Young,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,1,00-0031040,DE,Khalil Mack,Khalil,Mack,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,1,00-0037320,CB,Deane Leonard,Deane,Leonard,Abdomen,,Out,Abdomen,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,1,00-0038454,RB,Keaton Mitchell,Keaton,Mitchell,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,1,00-0039111,DE,Tuli Tuipulotu,Tuli,Tuipulotu,Hip,,Questionable,Hip,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,1,00-0040221,S,R.J. Mickens,R.J.,Mickens,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,1,00-0041550,WR,Brenen Thompson,Brenen,Thompson,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,1,00-0039338,TE,Brock Bowers,Brock,Bowers,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,1,00-0040122,RB,Ashton Jeanty,Ashton,Jeanty,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,1,00-0034779,LB,Ronnie Harrison,Ronnie,Harrison,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,1,00-0040182,S,Dante Trader Jr.,Dante,Trader,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,1,00-0041524,TE,Will Kacmarek,Will,Kacmarek,,,Full,Calf,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,1,00-0041579,TE,Seydou Traore,Seydou,Traore,,,Full,Thumb,Achilles,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,1,00-0029606,S,Harrison Smith,Harrison,Smith,,,Limited,Not injury related - resting player,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,1,00-0036616,T,Christian Darrisaw,Christian,Darrisaw,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,1,00-0041053,T,Caleb Tiernan,Caleb,Tiernan,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,1,00-0041054,S,Jakobe Thomas,Jakobe,Thomas,,,Full,Illness,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,1,00-0041354,S,Jacob Thomas,Jacob,Thomas,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,1,00-0036981,DT,Christian Barmore,Christian,Barmore,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,1,00-0037413,C,Ben Brown,Timothy,Brown,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,1,00-0040734,RB,TreVeyon Henderson,TreVeyon,Henderson,Ankle,,Out,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,1,00-0027962,LB,Cameron Jordan,Cameron,Jordan,Hamstring,,Out,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,1,00-0033860,DT,Davon Godchaux,Davon,Godchaux,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,1,00-0033906,RB,Alvin Kamara,Alvin,Kamara,Knee,,Questionable,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,1,00-0039373,RB,Audric Estimé,Audric,Estime,Thigh,,Out,Thigh,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,1,00-0041041,TE,Oscar Delp,Oscar,Delp,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,1,00-0031270,DT,Shelby Harris,Shelby,Harris,,,Full,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,1,00-0033376,FB,Patrick Ricard,Patrick,Ricard,,,Full,Toe,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,1,00-0036386,T,Andrew Thomas,Andrew,Thomas,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,1,00-0039337,WR,Malik Nabers,Malik,Nabers,Knee,,Questionable,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,1,00-0039446,C,Bryan Hudson,Bryan,Hudson,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,1,00-0039847,TE,Theo Johnson,Theodore,Johnson,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,1,00-0033375,WR,Tim Patrick,Timothy,Patrick,Groin,,Out,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,1,00-0036842,RB,Kene Nwangwu,Kene,Nwangwu,Back,,Doubtful,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,1,00-0036902,DE,Joseph Ossai,Joseph,Ossai,Foot,,Out,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,1,00-0038120,RB,Breece Hall,Breece,Hall,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,1,00-0039798,RB,Isaiah Davis,Isaiah,Davis,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,1,00-0041032,TE,Kenyon Sadiq,Kenyon,Sadiq,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,1,00-0041038,CB,D'Angelo Ponds,D'Angelo,Ponds,Calf,,Doubtful,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,1,00-0036224,LB,Jonathan Greenard,Jonathan,Greenard,Pectoral,,Out,Pectoral,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,1,00-0041483,TE,Eli Stowers,Eli,Stowers,Hamstring,Quadricep,Out,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,1,00-0039167,CB,Joey Porter Jr.,Joey,Porter,Back,,Questionable,Back,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0036363,T,Josh Jones,Josh,Jones,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0038765,S,Ty Okada,Tyler,Okada,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0038797,RB,Emanuel Wilson,Emanuel,Wilson,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0039020,G,Anthony Bradford,Anthony,Bradford,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0039793,TE,AJ Barner,AJ,Barner,,,Full,Oblique,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0040648,WR,Tory Horton,Tory,Horton,Hamstring,,Questionable,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0040733,S,Nick Emmanwori,Nicholas,Emmanwori,Ankle,,Questionable,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,1,00-0040873,CB,Julian Neal,Julian,Neal,,,Full,Quadricep,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0029892,FB,Kyle Juszczyk,Kyle,Juszczyk,,,Limited,Finger,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0033288,TE,George Kittle,George,Kittle,,,Limited,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0034982,LB,Dre Greenlaw,Keaundre,Greenlaw,,,Full,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0035413,LB,Luke Gifford,Luke,Gifford,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0035717,DE,Nick Bosa,Nicholas,Bosa,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0039345,CB,Renardo Green,Renardo,Green,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0040152,CB,Upton Stout,Upton,Stout,,,Full,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0040721,DT,Alfred Collins,Alfred,Collins,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0041363,DT,James Thompson Jr.,James,Thompson,Hamstring,,Questionable,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0041556,DE,Romello Height,Romello,Height,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,1,00-0041557,DT,Gracen Halton,Gracen,Halton,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,1,00-0034989,T,Justin Skule,Justin,Skule,Oblique,,Doubtful,Oblique,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,1,00-0035942,LB,Christian Rozeboom,Christian,Rozeboom,Foot,,Questionable,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,1,00-0038951,RB,Sean Tucker,Sean,Tucker,Hamstring,,Doubtful,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,1,00-0039855,WR,Jalen McMillan,Jalen,McMillan,Knee,,Doubtful,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,1,00-0040129,WR,Emeka Egbuka,Emeka,Egbuka,,,Full,Toe,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,1,00-0041031,LB,Rueben Bain Jr.,Rueben,Bain,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,1,00-0041082,G,Billy Schrauth,William,Schrauth,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,1,00-0039858,LB,Cedric Gray,Cedric,Gray,Concussion,,Out,Concussion,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,1,00-0041508,DE,Keldric Faulk,Keldric,Faulk,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0032268,QB,Marcus Mariota,Marcus,Mariota,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0034333,DT,Daron Payne,Daron,Payne,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0035149,C,Nick Allegretti,Nick,Allegretti,,,Full,Calf,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0035279,DE,Charles Omenihu,Charles,Omenihu,,,Full,Wrist,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0036260,DT,Javon Kinlaw,Javon,Kinlaw,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0036286,LB,K'Lavon Chaisson,K'Lavon,Chaisson,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0036940,LB,Odafe Oweh,Odafe,Oweh,,,Limited,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0039368,LB,Jordan Magee,Jordan,Magee,,,Full,Chest,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0039912,TE,Ben Sinnott,Ben,Sinnott,,,Full,Oblique,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,1,00-0040242,RB,Jacory Croskey-Merritt,Jacory,Croskey-Merritt,,,Limited,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0032954,G,Isaac Seumalo,Isaac,Seumalo,Shoulder,,Questionable,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0033066,DT,Andrew Billings,Andrew,Billings,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0033890,S,Budda Baker,Bishard,Baker,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0034381,LB,Josh Sweat,Josh,Sweat,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0036568,DT,Roy Lopez,Roy,Lopez,Groin,,Questionable,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0037596,LB,Jack Gibbens,Jack,Gibbens,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0037744,TE,Trey McBride,Trey,McBride,,,Full,Not injury related - resting player,Back,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0039007,CB,Garrett Williams,Garrett,Williams,Achilles,,Out,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0039807,CB,Max Melton,Malachi,Melton,Ankle,,Questionable,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0039808,G,Isaiah Adams,Isaiah,Adams,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0039864,S,Dadrion Taylor-Demerson,Dadrion,Taylor-Demerson,Ribs,,Questionable,Ribs,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,2,00-0040645,LB,Cody Simon,Cody,Simon,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0031279,T,Jake Matthews,Jacob,Matthews,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0031576,DE,Za'Darius Smith,Za'Darius,Smith,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0033662,QB,Cooper Rush,Cooper,Rush,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0035237,T,Jawaan Taylor,Jawaan,Taylor,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0035630,G,Chris Lindstrom,Christopher,Lindstrom,Concussion,,Questionable,Concussion,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0036212,QB,Tua Tagovailoa,Tuanigamanuolepola,Tagovailoa,Oblique,,Doubtful,Oblique,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0036285,CB,A.J. Terrell,Aundell,Terrell,Shoulder,,Questionable,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0036833,C,Ryan Neuzil,Ryan,Neuzil,,,DNP,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0039917,QB,Michael Penix Jr.,Michael,Penix,Knee,,Out,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0040156,CB,Billy Bowman Jr.,Billy,Bowman,Achilles,,Out,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,2,00-0041066,LB,Kendal Daniels,Kendal,Daniels,,,Full,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0026190,DT,Calais Campbell,Calais,Campbell,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0032965,T,Ronnie Stanley,Ronnie,Stanley,Toe,,Questionable,Toe,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0033935,LB,Trey Hendrickson,Collins,Hendrickson,Finger,,Questionable,Finger,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0036130,DT,Nnamdi Madubuike,Justin,Madubuike,Neck,,Out,Neck,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0036302,S,Jaylinn Hawkins,Jaylinn,Hawkins,,,Full,Chest,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0036369,G,John Simpson,John,Simpson,Groin,,Questionable,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0039064,WR,Zay Flowers,Xavien,Flowers,Hamstring,,Doubtful,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0039234,CB,T.J. Tampa,Marques,Tampa,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0039792,WR,Devontez Walker,Devontez,Walker,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0040069,LB,Teddye Buchanan,Teddye,Buchanan,Knee,,Out,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,2,00-0040104,S,Keondre Jackson,Keondre,Jackson,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,2,00-0034832,LB,Bradley Chubb,Bradley,Chubb,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,2,00-0035537,RB,Ty Johnson,Ty,Johnson,Hamstring,,Questionable,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,2,00-0037254,LB,Terrel Bernard,Terrel,Bernard,,,Limited,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,2,00-0039872,S,Cole Bishop,Cole,Bishop,Knee,Groin,Questionable,Knee,Groin,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,2,00-0040192,CB,Jordan Hancock,Jordan,Hancock,,,Full,Quadricep,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,2,00-0040724,DE,T.J. Sanders,Tanaeri,Sanders,Knee,Illness,Questionable,Knee,Illness,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,2,00-0031610,TE,Darren Waller,Darren,Waller,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,2,00-0036903,DT,Bobby Brown III,Bobby,Brown,Back,,Out,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,2,00-0037007,LB,Patrick Jones II,Patrick,Jones,Back,,Questionable,Back,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,2,00-0039491,WR,Jalen Coker,Jalen,Coker,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0031583,DT,Grady Jarrett,Grady,Jarrett,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0032391,G,Joe Thuney,Joseph,Thuney,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0033579,S,Xavier Woods,Xavier,Woods,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0036275,RB,D'Andre Swift,D'Andre,Swift,,,Full,Ankle,Knee,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0036366,DT,Neville Gallimore,Neville,Gallimore,,,Full,Illness,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0036480,DE,Dayo Odeyingbo,Temidayo,Odeyingbo,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0038932,T,Darnell Wright,Darnell,Wright,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0040236,RB,Kyle Monangai,Kyle,Monangai,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0040740,T,Ozzy Trapilo,Ozzy,Trapilo,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,2,00-0041060,CB,Malik Muhammad,Malik,Muhammad,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,2,00-0033523,DT,Jonathan Allen,Jonathan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,2,00-0033526,RB,Samaje Perine,Samaje,Perine,,,DNP,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,2,00-0034800,DT,B.J. Hill,Bobby,Hill,Achilles,,Questionable,Not injury related - resting player,Achilles,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,2,00-0035683,DT,Dexter Lawrence,Dexter,Lawrence,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,2,00-0036442,QB,Joe Burrow,Joseph,Burrow,Back,,Questionable,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,2,00-0037743,CB,Daxton Hill,Daxton,Hill,,,Full,Hand,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,2,00-0040756,DE,Shemar Stewart,Shemar,Stewart,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0033131,DT,Maliek Collins,Maliek,Collins,,,Limited,Quadricep,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0035526,C,Elgton Jenkins,Elgton,Jenkins,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0036287,CB,Noah Igbinoghene,Noah,Igbinoghene,Hand,,Questionable,,,,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0036407,WR,Jerry Jeudy,Jerry,Jeudy,,,Full,Wrist,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0036953,G,Teven Jenkins,Teven,Jenkins,Back,,Out,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0036974,CB,Tyson Campbell,Tyson,Campbell,Ankle,,Questionable,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0037818,G,Zion Johnson,Zion,Johnson,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0039014,T,Dawand Jones,Dawand,Jones,,,Full,Head,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,2,00-0041073,C,Parker Brailsford,Parker,Brailsford,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,2,00-0033877,S,Malik Hooker,Malik,Hooker,Forearm,,Out,Forearm,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,2,00-0037310,LB,James Houston,James,Houston,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,2,00-0038556,LB,DeMarvion Overshown,DeMarvion,Overshown,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,2,00-0040017,T,Ajani Cornelius,Ajani,Cornelius,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,2,00-0038976,WR,Marvin Mims Jr.,Marvin,Mims,Foot,,Out,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,2,00-0039809,LB,Jonah Elliss,Jonah,Elliss,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,2,00-0039868,WR,Troy Franklin,Troy,Franklin,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,2,00-0040730,RB,RJ Harvey,Robert,Harvey,Hamstring,,Questionable,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,2,00-0034384,CB,D.J. Reed,Dennis,Reed,Foot,,Questionable,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,2,00-0038820,S,Christian Izien,Christian,Izien,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,2,00-0038936,G,Juice Scruggs,Frederick,Scruggs,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,2,00-0039408,G,Christian Mahogany,Christian,Mahogany,Hip,,Out,Hip,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,2,00-0041439,T,Blake Miller,Blake,Miller,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0033109,DT,Javon Hargrave,Javon,Hargrave,Knee,Concussion,Doubtful,Knee,Concussion,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0036551,G,Aaron Banks,Aaron,Banks,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0036625,CB,Benjamin St-Juste,Benjamin,St-Juste,Hamstring,,Questionable,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0037075,DT,Devonte Wyatt,Devonte,Wyatt,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0037817,T,Zach Bako-Bewele,Zach,Bako-Bewele,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0039112,LB,Lukas Van Ness,Lukas,Van Ness,Concussion,,Questionable,Concussion,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0039812,LB,Ty'Ron Hopper,Ty'Ron,Hopper,,,Limited,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0040010,LB,Barryn Sorrell,Barryn,Sorrell,,,Limited,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0040016,DT,Warren Brinson,Warren,Brinson,Calf,,Out,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,2,00-0041470,CB,Brandon Cisse,Brandon,Cisse,,,Full,Cramps,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0031364,DE,Jadeveon Clowney,Jadeveon,Clowney,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0032071,T,Trent Brown,Trenton,Brown,,,Full,Hand,Wrist,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0034383,TE,Dalton Schultz,Dalton,Schultz,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0036554,WR,Nico Collins,Nico,Collins,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0037633,LB,Jacob Hummel,Jacob,Hummel,Groin,,Out,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0038127,DE,Logan Hall,Logan,Hall,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0038131,G,Ed Ingram,Edward,Ingram,Groin,,Out,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0039108,DE,Will Anderson Jr.,William,Anderson,,,Limited,Not injury related - resting player,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,2,00-0041465,LB,Wade Woodaz,Wade,Woodaz,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0030279,WR,Keenan Allen,Keenan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0032378,DT,DeForest Buckner,DeForest,Buckner,,,DNP,Ankle,Not injury related - resting player,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0033952,DT,Grover Stewart,Grover,Stewart,,,Full,Not injury related - personal matter,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0034573,CB,Charvarius Ward,Charvarius,Ward,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0035021,WR,Ashton Dulin,Ashton,Dulin,Ankle,,Out,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0036298,LB,Akeem Davis-Gaither,Akeem,Davis-Gaither,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0037190,CB,Sauce Gardner,Ahmad,Gardner,,,Full,Rib,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0037664,WR,Alec Pierce,Alec,Pierce,,,Full,Heel,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0039164,QB,Anthony Richardson,Anthony,Richardson,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0039178,LB,Austin Ajiake,Austin,Ajiake,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,2,00-0040179,RB,DJ Giddens,DJ,Giddens,Knee,,Questionable,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,2,00-0034413,LB,Foyesade Oluokun,Foyesade,Oluokun,,,Full,Wrist,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,2,00-0034960,WR,Jakobi Meyers,Jakobi,Meyers,,,Limited,Thumb,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,2,00-0036655,T,Cole Van Lanen,Cole,Van Lanen,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,2,00-0038616,CB,Christian Braswell,Christian,Braswell,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,2,00-0039893,WR,Brian Thomas Jr.,Brian,Thomas,,,Limited,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,2,00-0040238,RB,LeQuint Allen Jr.,LeQuint,Allen,,,Limited,Hip,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0032762,DT,Chris Jones,Christopher,Jones,Calf,,Questionable,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0033873,QB,Patrick Mahomes,Patrick,Mahomes,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0036374,CB,L'Jarius Sneed,L'Jarius,Sneed,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0038982,S,Chamarri Conner,Chamarri,Conner,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0039067,WR,Rashee Rice,Rashee,Rice,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0040116,T,Josh Simmons,Josh,Simmons,Back,,Out,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0040640,DE,Ashton Gillotte,Ashton,Gillotte,,,Full,Foot,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0041501,DE,R Mason Thomas,R Mason,Thomas,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,2,00-0041543,CB,Mansoor Delane,Mansoor,Delane,Shoulder,,Questionable,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0031381,WR,Davante Adams,Davante,Adams,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0031388,DT,Aaron Donald,Aaron,Donald,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0033110,TE,Tyler Higbee,Tyler,Higbee,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0036349,S,Kam Curl,Kamren,Curl,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0036603,T,Alaric Jackson,Alaric,Jackson,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0037587,LB,Nate Landman,Nate,Landman,,,Limited,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0039075,WR,Puka Nacua,Puka,Nacua,Hip,,Questionable,Hip,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0039137,LB,Byron Young,Byron,Young,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0039751,WR,Jordan Whittington,Jordan,Whittington,Quadricep,,Doubtful,Quadricep,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0039774,LB,Omar Speights,Omar,Speights,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,2,00-0039834,S,Kamren Kinchens,Kamren,Kinchens,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0031040,DE,Khalil Mack,Khalil,Mack,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0032146,DE,Bud Dupree,Alvin,Dupree,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0033546,DT,Dalvin Tomlinson,Dalvin,Tomlinson,,,Full,Hamstring,Not injury related - resting player,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0035688,T,Trey Pipkins,Trey,Pipkins,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0036181,DT,Teair Tart,Teair,Tart,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0036992,S,Elijah Molden,Elijah,Molden,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0037320,CB,Deane Leonard,Deane,Leonard,Abdomen,,Questionable,Abdomen,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0038573,WR,Derius Davis,Derius,Davis,,,Full,Calf,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0039915,WR,Ladd McConkey,Andrew,McConkey,Rib,,Questionable,Rib,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,2,00-0041544,DE,Akheem Mesidor,Akheem,Mesidor,,,Full,Calf,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,2,00-0038579,QB,Aidan O'Connell,Aidan,O'Connell,Not injury related - personal matter,,Questionable,Not injury related - personal matter,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,2,00-0039338,TE,Brock Bowers,Brock,Bowers,Knee,,Doubtful,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,2,00-0040122,RB,Ashton Jeanty,Ashton,Jeanty,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,2,00-0040641,CB,Darien Porter,Darien,Porter,Foot,,Out,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,2,00-0034779,LB,Ronnie Harrison,Ronnie,Harrison,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,2,00-0037686,LS,Tucker Addington,Tucker,Addington,Shoulder,,Questionable,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,2,00-0038128,QB,Malik Willis,Malik,Willis,,,Full,Toe,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,2,00-0039911,LB,Chop Robinson,Demeioun,Robinson,Concussion,,Out,Concussion,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,2,00-0040182,S,Dante Trader Jr.,Dante,Trader,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,2,00-0041579,TE,Seydou Traore,Seydou,Traore,,,Limited,Thumb,Achilles,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,2,00-0029606,S,Harrison Smith,Harrison,Smith,,,Limited,Not injury related - resting player,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,2,00-0034158,T,Brian O'Neill,Brian,O'Neill,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,2,00-0035228,QB,Kyler Murray,Kyler,Murray,Concussion,,Out,Concussion,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,2,00-0035272,LB,Andrew Van Ginkel,Andrew,Van Ginkel,,,Full,Chest,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,2,00-0035276,LB,Blake Cashman,Blake,Cashman,,,Full,Wrist,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,2,00-0036259,WR,Jauan Jennings,Bennie,Jennings,Not injury related - personal matter,,Out,Not injury related - personal matter,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,2,00-0036616,T,Christian Darrisaw,Christian,Darrisaw,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,2,00-0034720,LB,Robert Spillane,Robert,Spillane,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,2,00-0034778,CB,Carlton Davis III,Carlton,Davis,Neck,,Out,Neck,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,2,00-0035678,LB,Dre'Mont Jones,Dre'Mont,Jones,Foot,,Questionable,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,2,00-0037413,C,Ben Brown,Timothy,Brown,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,2,00-0040734,RB,TreVeyon Henderson,TreVeyon,Henderson,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,2,00-0041103,T,Dametrious Crownover,Dametrious,Crownover,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0027962,LB,Cameron Jordan,Cameron,Jordan,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0033063,LS,Zach Wood,Zachary,Wood,Calf,,Out,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0033860,DT,Davon Godchaux,Davon,Godchaux,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0033906,RB,Alvin Kamara,Alvin,Kamara,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0036040,TE,Juwan Johnson,Juwan,Johnson,,,Full,Illness,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0036321,LB,Chase Young,Chase,Young,Calf,,Questionable,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0037239,WR,Chris Olave,Chris,Olave,Hamstring,,Questionable,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0039622,LB,Isaiah Stalbird,Isaiah,Stalbird,Shoulder,,Doubtful,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0041041,TE,Oscar Delp,Oscar,Delp,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,2,00-0041390,DT,Christen Miller,Christen,Miller,Toe,,Questionable,Toe,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,2,00-0036386,T,Andrew Thomas,Andrew,Thomas,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,2,00-0036937,CB,Paulson Adebo,Saiid,Adebo,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,2,00-0036982,DE,Chauncey Golston,Chauncey,Golston,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,2,00-0036996,CB,Greg Newsome II,Greg,Newsome,,,Full,Rib,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,2,00-0037259,LB,Micah McFadden,Micah,McFadden,Neck,,Questionable,Neck,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,2,00-0039000,CB,Deonte Banks,Deonte,Banks,Calf,,Questionable,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,2,00-0041505,T,Francis Mauigoa,Francis,Mauigoa,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0033051,DT,David Onyemata,Ebuka,Onyemata,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0034789,S,Minkah Fitzpatrick,Minkah,Fitzpatrick,Groin,,Out,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0036500,LB,Jamien Sherwood,Jamien,Sherwood,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0036842,RB,Kene Nwangwu,Kene,Nwangwu,Back,,Out,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0036902,DE,Joseph Ossai,Joseph,Ossai,Foot,,Out,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0039142,DE,Will McDonald IV,Will,McDonald,Ankle,,Questionable,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0039372,CB,Jarvis Brownlee Jr.,Jarvis,Brownlee,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0041038,CB,D'Angelo Ponds,D'Angelo,Ponds,,,Full,Calf,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,2,00-0041511,WR,Omar Cooper Jr.,Omar,Cooper,Ankle,,Out,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,2,00-0035662,WR,Marquise Brown,Marquise,Brown,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,2,00-0036224,LB,Jonathan Greenard,Jonathan,Greenard,Pectoral,,Out,Pectoral,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,2,00-0036980,WR,Elijah Moore,Elijah,Moore,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,2,00-0038386,DT,Jalen Carter,Jalen,Carter,,,Limited,Wrist,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,2,00-0039841,CB,Cooper DeJean,Cooper,DeJean,,,Full,Calf,Abdomen,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,2,00-0040749,S,Andrew Mukuba,Andrew,Mukuba,Knee,,Questionable,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,2,00-0027969,DT,Cameron Heyward,Cameron,Heyward,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,2,00-0036252,WR,Michael Pittman,Michael,Pittman,Foot,,Questionable,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,2,00-0038558,TE,Darnell Washington,Darnell,Washington,,,Full,Not injury related - personal matter,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,2,00-0039167,CB,Joey Porter Jr.,Joey,Porter,Back,,Out,Back,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,2,00-0039871,T,Troy Fautanu,Troy,Fautanu,Ankle,,Questionable,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0033908,WR,Cooper Kupp,Cooper,Kupp,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0034869,QB,Sam Darnold,Sam,Darnold,Glute,,Out,Glute,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0036363,T,Josh Jones,Josh,Jones,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0037137,CB,Josh Jobe,Joshua,Jobe,,,Full,Wrist,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0038765,S,Ty Okada,Tyler,Okada,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0039020,G,Anthony Bradford,Anthony,Bradford,Knee,Hip,Out,Knee,Hip,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0040648,WR,Tory Horton,Tory,Horton,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,2,00-0040733,S,Nick Emmanwori,Nicholas,Emmanwori,Ankle,Hip,Questionable,Ankle,Hip,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0027857,T,Trent Williams,Trenton,Williams,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0029892,FB,Kyle Juszczyk,Kyle,Juszczyk,,,Full,Finger,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0033280,RB,Christian McCaffrey,Christian,McCaffrey,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0033288,TE,George Kittle,George,Kittle,,,Full,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0034173,K,Eddy Pineiro,Eddy,Pineiro,Illness,,Questionable,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0034982,LB,Dre Greenlaw,Keaundre,Greenlaw,,,Full,Not injury related - resting player,Achilles,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0035717,DE,Nick Bosa,Nicholas,Bosa,,,Full,Not injury related - resting player,Knee,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0036341,DE,Khalid Kareem,Khalid,Kareem,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0039148,DE,Keion White,Keion,White,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0040152,CB,Upton Stout,Upton,Stout,,,Full,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0041035,WR,De'Zhaun Stribling,De'Zhaun-Ryan,Stribling,Ankle,,Out,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,2,00-0041052,RB,Kaelon Black,Kaelon,Black,Groin,,Questionable,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,2,00-0032399,S,Miles Killebrew,Miles,Killebrew,Concussion,,Questionable,Concussion,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,2,00-0032889,DT,A'Shawn Robinson,A'Shawn,Robinson,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,2,00-0034989,T,Justin Skule,Justin,Skule,,,Full,Oblique,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,2,00-0035942,LB,Christian Rozeboom,Christian,Rozeboom,,,Full,Foot,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,2,00-0038951,RB,Sean Tucker,Sean,Tucker,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,2,00-0039855,WR,Jalen McMillan,Jalen,McMillan,Knee,,Questionable,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,2,00-0040143,CB,Jacob Parrish,Jacob,Parrish,Back,,Questionable,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,2,00-0037758,CB,Cordale Flott,Cordale,Flott,Quadricep,,Questionable,Quadricep,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,2,00-0039430,LB,James Williams,James,Williams,Elbow,,Questionable,Elbow,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,2,00-0039858,LB,Cedric Gray,Cedric,Gray,Concussion,,Questionable,Concussion,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0034302,LB,Frankie Luvu,Frank,Luvu,Groin,,Out,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0034333,DT,Daron Payne,Daron,Payne,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0034373,LB,Dorance Armstrong,Dorance,Armstrong,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0035279,DE,Charles Omenihu,Charles,Omenihu,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0036260,DT,Javon Kinlaw,Javon,Kinlaw,Back,,Questionable,Back,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0036286,LB,K'Lavon Chaisson,K'Lavon,Chaisson,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0036940,LB,Odafe Oweh,Odafe,Oweh,,,Limited,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0037092,G,Chris Paul,Chris,Paul,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0037809,TE,Chig Okonkwo,Chigoziem,Okonkwo,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0039681,S,Tyler Owens,Tyler,Owens,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0040164,WR,Jaylin Lane,Joshua,Lane,,,Limited,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,2,00-0041096,RB,Kaytron Allen,Kaytron,Allen,,,Full,Ankle,Knee,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0032954,G,Isaac Seumalo,Isaac,Seumalo,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0033119,QB,Jacoby Brissett,Jacoby,Brissett,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0034381,LB,Josh Sweat,Josh,Sweat,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0035144,LB,Mack Wilson,Lyndell,Wilson,,,Full,Not injury related - resting player,Thumb,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0035258,C,Hjalte Froholdt,Hjalte,Froholdt,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0036568,DT,Roy Lopez,Roy,Lopez,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0039007,CB,Garrett Williams,Garrett,Williams,,,Limited,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0039807,CB,Max Melton,Malachi,Melton,,,Limited,Toe,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ARI,3,00-0039864,S,Dadrion Taylor-Demerson,Dadrion,Taylor-Demerson,,,Limited,Back,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0033945,DE,Samson Ebukam,Nnamaka,Ebukam,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0035237,T,Jawaan Taylor,Jawaan,Taylor,,,Full,Rib,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0036204,DT,LaCale London,LaCale,London,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0036212,QB,Tua Tagovailoa,Tuanigamanuolepola,Tagovailoa,,,Full,Oblique,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0036285,CB,A.J. Terrell,Aundell,Terrell,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0037317,TE,Nick Muse,Nicholas,Muse,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0037746,RB,Brian Robinson,Brian,Robinson,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0039859,DT,Brandon Dorlus,Brandon,Dorlus,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0039917,QB,Michael Penix Jr.,Michael,Penix,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,ATL,3,00-0040156,CB,Billy Bowman Jr.,Billy,Bowman,Achilles,,Questionable,Achilles,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0026190,DT,Calais Campbell,Calais,Campbell,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0032398,WR,Chris Moore,Christopher,Moore,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0032965,T,Ronnie Stanley,Ronnie,Stanley,,,DNP,Toe,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0033935,LB,Trey Hendrickson,Collins,Hendrickson,,,Limited,Finger,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0036130,DT,Nnamdi Madubuike,Justin,Madubuike,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0036369,G,John Simpson,John,Simpson,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0039064,WR,Zay Flowers,Xavien,Flowers,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0040069,LB,Teddye Buchanan,Teddye,Buchanan,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0040688,S,Malaki Starks,William,Starks,,,Limited,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BAL,3,00-0041494,LB,Zion Young,Zion,Young,,,Full,Quadricep,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0034827,WR,DJ Moore,Denniston,Moore,,,DNP,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0034832,LB,Bradley Chubb,Bradley,Chubb,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0035230,DT,Ed Oliver,Edward,Oliver,,,Limited,Hip,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0035537,RB,Ty Johnson,Ty,Johnson,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0037254,LB,Terrel Bernard,Terrel,Bernard,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0039763,LB,Joe Andreessen,Joe,Andreessen,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0039901,WR,Keon Coleman,Keon,Coleman,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0040192,CB,Jordan Hancock,Jordan,Hancock,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0040724,DE,T.J. Sanders,Tanaeri,Sanders,,,DNP,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,BUF,3,00-0041128,G,Ar'maj Reed-Adams,Ar'maj,Reed-Adams,,,Limited,Elbow,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0031610,TE,Darren Waller,Darren,Waller,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0035669,S,Nick Scott,Nicholas,Scott,,,DNP,Rib,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0036903,DT,Bobby Brown III,Bobby,Brown,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0036934,LB,Jaelan Phillips,Jaelan,Phillips,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0037007,LB,Patrick Jones II,Patrick,Jones,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0037244,LB,Devin Lloyd,Devin,Lloyd,,,DNP,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0038493,LB,Claudin Cherelus,Claudin,Cherelus,,,DNP,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0039342,WR,Xavier Legette,Anthony,Legette,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CAR,3,00-0039491,WR,Jalen Coker,Jalen,Coker,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0031203,K,Cairo Santos,Cairo,Santos,,,DNP,Hip,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0031583,DT,Grady Jarrett,Grady,Jarrett,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0038390,LB,Noah Sewell,Noah,Sewell,,,Limited,Achilles,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0038416,QB,Tyson Bagent,Tyson,Bagent,,,DNP,Concussion,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0039071,CB,Tyrique Stevenson,Tyrique,Stevenson,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0039918,QB,Caleb Williams,Caleb,Williams,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0040236,RB,Kyle Monangai,Kyle,Monangai,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CHI,3,00-0040741,DE,Shemar Turner,Shemar,Turner,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,3,00-0033523,DT,Jonathan Allen,Jonathan,Allen,,,DNP,Not injury related - resting player,Knee,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,3,00-0034800,DT,B.J. Hill,Bobby,Hill,,,DNP,Achilles,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CIN,3,00-0038619,WR,Andrei Iosivas,Andrei,Iosivas,,,DNP,Thumb,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,3,00-0035234,T,Tytus Howard,Tytus,Howard,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,3,00-0035680,LB,Quincy Williams,Quincy,Williams,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,3,00-0036282,S,Grant Delpit,Grant,Delpit,,,Limited,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,3,00-0036953,G,Teven Jenkins,Teven,Jenkins,,,DNP,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,3,00-0036974,CB,Tyson Campbell,Tyson,Campbell,,,Limited,Ankle,Hip,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,3,00-0040685,DT,Mason Graham,Mason,Graham,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,CLE,3,00-0040784,RB,Quinshon Judkins,Quinshon,Judkins,,,Limited,Not injury related - personal matter,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,3,00-0033877,S,Malik Hooker,Malik,Hooker,Forearm,,Out,Forearm,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,3,00-0035227,S,P.J. Locke,James,Locke,Foot,,Out,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,3,00-0037310,LB,James Houston,James,Houston,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,3,00-0037839,CB,Cobie Durant,Decobie,Durant,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DAL,3,00-0038556,LB,DeMarvion Overshown,DeMarvion,Overshown,Hamstring,,Out,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,3,00-0036158,RB,J.K. Dobbins,J.K.,Dobbins,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,3,00-0038976,WR,Marvin Mims Jr.,Marvin,Mims,,,Limited,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,3,00-0040730,RB,RJ Harvey,Robert,Harvey,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DEN,3,00-0041496,RB,Jonah Coleman,Jonah,Coleman,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0036272,G,Ben Bartch,Ben,Bartch,,,DNP,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0036624,DT,Alim McNeill,Alim,McNeill,,,Full,Not injury related - personal matter,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0039408,G,Christian Mahogany,Christian,Mahogany,,,Limited,Hip,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0039445,LS,Hogan Hatten,Hogan,Hatten,,,Full,Wrist,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0039660,S,Thomas Harper,Thomas,Harper,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0040728,G,Tate Ratledge,Tate,Ratledge,,,Limited,Elbow,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0040761,DE,Ahmed Hassanein,Ahmed,Hassanein,,,Full,Illness,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,DET,3,00-0041439,T,Blake Miller,Blake,Miller,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0033109,DT,Javon Hargrave,Javon,Hargrave,Knee,Concussion,Questionable,Knee,Concussion,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0036551,G,Aaron Banks,Aaron,Banks,Knee,Toe,Out,Knee,Toe,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0036625,CB,Benjamin St-Juste,Benjamin,St-Juste,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0037091,WR,Bo Melton,Miles,Melton,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0037817,T,Zach Bako-Bewele,Zach,Bako-Bewele,Knee,,Out,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0039146,WR,Jayden Reed,Jayden,Reed,Neck,,Out,Neck,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0039272,G,Donovan Jennings,Donovan,Jennings,,,Limited,Hand,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0039850,LB,Edgerrin Cooper,Edgerrin,Cooper,,,Limited,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0040016,DT,Warren Brinson,Warren,Brinson,Calf,,Out,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0040689,DT,Anthony Campbell,Anthony,Campbell,Ankle,,Questionable,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0040726,T,Anthony Belton,Anthony,Belton,,,Full,Elbow,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,GB,3,00-0041470,CB,Brandon Cisse,Brandon,Cisse,,,Full,Teeth,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0031364,DE,Jadeveon Clowney,Jadeveon,Clowney,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0032071,T,Trent Brown,Trenton,Brown,,,Limited,Knee,Wrist,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0034355,S,M.J. Stewart,Marvin,Stewart,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0034383,TE,Dalton Schultz,Dalton,Schultz,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0036554,WR,Nico Collins,Nico,Collins,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0037130,S,Reed Blankenship,Reed,Blankenship,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0037633,LB,Jacob Hummel,Jacob,Hummel,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0038127,DE,Logan Hall,Logan,Hall,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0038131,G,Ed Ingram,Edward,Ingram,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0039108,DE,Will Anderson Jr.,William,Anderson,,,Limited,Not injury related - resting player,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,HOU,3,00-0041465,LB,Wade Woodaz,Wade,Woodaz,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0030279,WR,Keenan Allen,Keenan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0032951,WR,Laquon Treadwell,Laquon,Treadwell,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0033952,DT,Grover Stewart,Grover,Stewart,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0034573,CB,Charvarius Ward,Charvarius,Ward,,,Limited,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0035021,WR,Ashton Dulin,Ashton,Dulin,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0036223,RB,Jonathan Taylor,Jonathan,Taylor,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0037190,CB,Sauce Gardner,Ahmad,Gardner,,,Full,Rib,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0037664,WR,Alec Pierce,Alec,Pierce,,,DNP,Heel,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,IND,3,00-0039736,G,Matt Goncalves,Matthew,Goncalves,,,Full,Foot,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,3,00-0034960,WR,Jakobi Meyers,Jakobi,Meyers,,,Limited,Thumb,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,3,00-0036262,DT,DaVon Hamilton,DaVon,Hamilton,,,Limited,Back,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,3,00-0036655,T,Cole Van Lanen,Cole,Van Lanen,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,3,00-0036985,C,Robert Hainsey,Robert,Hainsey,,,Limited,Elbow,Groin,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,3,00-0038616,CB,Christian Braswell,Christian,Braswell,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,3,00-0040238,RB,LeQuint Allen Jr.,LeQuint,Allen,,,Limited,Hip,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,JAX,3,00-0040326,LB,Branson Combs,Branson,Combs,,,DNP,Not injury related - personal matter,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0032762,DT,Chris Jones,Christopher,Jones,,,Limited,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0033873,QB,Patrick Mahomes,Patrick,Mahomes,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0036374,CB,L'Jarius Sneed,L'Jarius,Sneed,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0037208,LB,Jack Cochrane,Jack,Cochrane,,,Full,Calf,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0038982,S,Chamarri Conner,Chamarri,Conner,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0039006,DE,Felix Anudike-Uzomah,Felix,Anudike-Uzomah,,,Full,Quadricep,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0039067,WR,Rashee Rice,Rashee,Rice,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0039825,S,Jaden Hicks,Jaden,Hicks,,,Full,Biceps,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0040072,LB,Jeffrey Bassa,Jeffrey,Bassa,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0040116,T,Josh Simmons,Josh,Simmons,,,DNP,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0041497,CB,Jadon Canady,Jadon,Canady,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,KC,3,00-0041543,CB,Mansoor Delane,Mansoor,Delane,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0036244,TE,Colby Parkinson,Colby,Parkinson,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0036603,T,Alaric Jackson,Alaric,Jackson,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0037587,LB,Nate Landman,Nate,Landman,,,Limited,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0037841,S,Quentin Lake,Quentin,Lake,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0039075,WR,Puka Nacua,Puka,Nacua,,,DNP,Hip,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0039751,WR,Jordan Whittington,Jordan,Whittington,,,Limited,Quadricep,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0039834,S,Kamren Kinchens,Kamren,Kinchens,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LA,3,00-0040737,TE,Terrance Ferguson,Terrance,Ferguson,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0031040,DE,Khalil Mack,Khalil,Mack,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0033546,DT,Dalvin Tomlinson,Dalvin,Tomlinson,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0034790,S,Derwin James,Derwin,James,,,Full,Finger,Not injury related - resting player,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0035688,T,Trey Pipkins,Trey,Pipkins,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0036736,G,Kayode Awosika,Kayode,Awosika,,,DNP,Fibula,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0036992,S,Elijah Molden,Elijah,Molden,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0037009,T,Rashawn Slater,Rashawn,Slater,,,Full,Groin,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0037320,CB,Deane Leonard,Deane,Leonard,,,Full,Abdomen,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0038046,TE,Charlie Kolar,Charlie,Kolar,,,DNP,Forearm,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0038103,G,Cole Strange,Devin,Strange,,,Full,Pectoral,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0039111,DE,Tuli Tuipulotu,Tuli,Tuipulotu,,,Limited,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0039915,WR,Ladd McConkey,Andrew,McConkey,,,Full,Rib,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0041381,CB,Rodney Shelley,Rodney,Shelley,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LAC,3,00-0041550,WR,Brenen Thompson,Brenen,Thompson,,,DNP,Quadricep,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0034275,DT,Foley Fatukasi,Folorunso,Fatukasi,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0036479,DE,Kwity Paye,Kwity,Paye,,,DNP,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0037093,WR,Dareke Young,Dareke,Young,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0037527,LB,Segun Olubi,Segun,Olubi,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0037615,LB,Nakobe Dean,Nakobe,Dean,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0038579,QB,Aidan O'Connell,Aidan,O'Connell,,,DNP,Not injury related - personal matter,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0039338,TE,Brock Bowers,Brock,Bowers,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0040199,DT,JJ Pegues,Jeremiah,Pegues,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0040641,CB,Darien Porter,Darien,Porter,,,Full,Foot,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,LV,3,00-0040868,S,Treydan Stukes,Treydan,Stukes,,,DNP,Concussion,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0037686,LS,Tucker Addington,Tucker,Addington,,,Limited,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0038603,DE,Rob Beal Jr.,Robert,Beal,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0038824,WR,Ryan Miller,Ryan,Miller,,,DNP,Hip,Back,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0039156,CB,Julius Brents,Julius,Brents,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0039874,RB,Jaylen Wright,Jaylen,Wright,,,Limited,Stinger,Foot,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0039911,LB,Chop Robinson,Demeioun,Robinson,,,Full,Concussion,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0041523,WR,Caleb Douglas,Caleb,Douglas,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0041525,WR,Chris Bell,Christopher,Bell,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0041533,CB,Chris Johnson,Anthony,Johnson,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIA,3,00-0041579,TE,Seydou Traore,Seydou,Traore,,,Full,Thumb,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0033293,RB,Aaron Jones,Aaron,Jones,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0034158,T,Brian O'Neill,Brian,O'Neill,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0036425,RB,DeeJay Dallas,DeeJay,Dallas,,,Limited,Toe,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0038778,DE,Jalen Redmond,Jalen,Redmond,,,Limited,Elbow,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0039237,C,Nick Samac,Nick,Samac,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0040173,DE,Tyrion Ingram-Dawkins,Tyrion,Ingram-Dawkins,,,Full,Oblique,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0041495,LB,Jake Golday,Jake,Golday,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,MIN,3,00-0041581,P,Brett Thorson,Brett,Thorson,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0031054,DT,DaQuan Jones,DaQuan,Jones,,,Full,Not injury related - personal matter,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0031330,T,Morgan Moses,Morgan,Moses,,,Limited,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0034778,CB,Carlton Davis III,Carlton,Davis,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0035678,LB,Dre'Mont Jones,Dre'Mont,Jones,,,DNP,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0036187,FB,Reggie Gilliam,Reggie,Gilliam,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0037205,S,Brenden Schooler,Brenden,Schooler,,,Limited,Back,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0040716,S,Craig Woodson,Craig,Woodson,,,DNP,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0041103,T,Dametrious Crownover,Dametrious,Crownover,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0041395,TE,Eli Raridon,Elijah,Raridon,,,DNP,Thigh,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NE,3,00-0041402,LB,Quintayvious Hutchins,Quintayvious,Hutchins,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0033860,DT,Davon Godchaux,Davon,Godchaux,,,DNP,Not injury related - resting player,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0034760,DT,Nathan Shepherd,Nathan,Shepherd,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0036321,LB,Chase Young,Chase,Young,,,Full,Calf,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0036973,RB,Travis Etienne,Travis,Etienne,,,Limited,Hamstring,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0037250,CB,Martin Emerson,Martin,Emerson,,,DNP,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0038551,RB,Kendre Miller,Kendre,Miller,,,DNP,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0039622,LB,Isaiah Stalbird,Isaiah,Stalbird,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0040643,S,Jonas Sanker,Jonas,Sanker,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0041099,WR,Barion Brown,Barion,Brown,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NO,3,00-0041390,DT,Christen Miller,Christen,Miller,,,DNP,Toe,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0031270,DT,Shelby Harris,Shelby,Harris,,,Limited,Toe,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0033290,T,Jermaine Eluemunor,Jermaine,Eluemunor,,,Full,Thigh,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0035713,LB,Brian Burns,Brian,Burns,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0036386,T,Andrew Thomas,Andrew,Thomas,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0036996,CB,Greg Newsome II,Greg,Newsome,,,Full,Rib,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0037259,LB,Micah McFadden,Micah,McFadden,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0038986,CB,Nic Jones,Nic,Jones,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0039000,CB,Deonte Banks,Deonte,Banks,,,Limited,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0039337,WR,Malik Nabers,Malik,Nabers,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0039861,S,Tyler Nubin,Tyler,Nubin,,,Limited,Calf,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0040691,QB,Jaxson Dart,Jaxson,Dart,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYG,3,00-0041505,T,Francis Mauigoa,Francis,Mauigoa,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,3,00-0034789,S,Minkah Fitzpatrick,Minkah,Fitzpatrick,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,3,00-0036842,RB,Kene Nwangwu,Kene,Nwangwu,,,DNP,Back,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,3,00-0036902,DE,Joseph Ossai,Joseph,Ossai,,,Limited,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,3,00-0039890,WR,Adonai Mitchell,Adonai,Mitchell,,,Limited,Finger,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,3,00-0040186,LB,Francisco Mauigoa,Francisco,Mauigoa,,,DNP,Quadricep,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,3,00-0040736,TE,Mason Taylor,Mason,Taylor,,,DNP,Thumb,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,NYJ,3,00-0041026,DE,David Bailey,David,Bailey,,,Full,Elbow,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0034351,TE,Dallas Goedert,Dallas,Goedert,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0034844,RB,Saquon Barkley,Saquon,Barkley,,,Limited,Neck,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0036224,LB,Jonathan Greenard,Jonathan,Greenard,,,Limited,Pectoral,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0036912,WR,DeVonta Smith,DeVonta,Smith,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0038386,DT,Jalen Carter,Jalen,Carter,,,Limited,Wrist,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0038555,RB,Tank Bigsby,Cantavious,Bigsby,,,DNP,Abdomen,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0039001,G,Tyler Steen,Tyler,Steen,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0039746,RB,Will Shipley,William,Shipley,,,DNP,Foot,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PHI,3,00-0040749,S,Andrew Mukuba,Andrew,Mukuba,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0033055,CB,Jalen Ramsey,Jalen,Ramsey,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0035286,LB,Cole Holcomb,Cole,Holcomb,,,DNP,Not injury related - personal matter,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0035699,CB,Jamel Dean,Jamel,Dean,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0036139,RB,Rico Dowdle,Rico,Dowdle,,,DNP,Toe,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0036252,WR,Michael Pittman,Michael,Pittman,,,Limited,Foot,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0037228,RB,Jaylen Warren,Derrell,Warren,,,Limited,Shoulder,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0039167,CB,Joey Porter Jr.,Joey,Porter,,,Limited,Not injury related - other,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,PIT,3,00-0041396,G,Gennings Dunker,Gennings,Dunker,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0033908,WR,Cooper Kupp,Cooper,Kupp,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0034869,QB,Sam Darnold,Sam,Darnold,,,Full,Glute,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0034974,S,Julian Love,Julian,Love,,,DNP,Calf,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0036994,LB,Ernest Jones,Ernest,Jones,,,Full,Neck,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0038488,FB,Brady Russell,Brady,Russell,,,Full,Chest,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0038694,DT,Brandon Pili,Brandon,Pili,,,Limited,Concussion,Neck,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0038765,S,Ty Okada,Tyler,Okada,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0039299,RB,George Holani,George,Holani,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0040733,S,Nick Emmanwori,Nicholas,Emmanwori,,,Full,Ankle,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SEA,3,00-0041512,RB,Jadarian Price,Jadarian,Price,,,Limited,Chest,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0027857,T,Trent Williams,Trenton,Williams,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0031408,WR,Mike Evans,Michael,Evans,,,DNP,Hip,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0032775,WR,Demarcus Robinson,Demarcus,Robinson,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0033280,RB,Christian McCaffrey,Christian,McCaffrey,,,Full,Not injury related - resting player,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0034982,LB,Dre Greenlaw,Keaundre,Greenlaw,,,Full,Not injury related - resting player,Achilles,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0035717,DE,Nick Bosa,Nicholas,Bosa,,,DNP,Knee,Calf,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0041363,DT,James Thompson Jr.,James,Thompson,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,SF,3,00-0041556,DE,Romello Height,Romello,Height,,,DNP,Hand,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,3,00-0032889,DE,A'Shawn Robinson,A'Shawn,Robinson,,,Limited,Not injury related - resting player,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,3,00-0034855,QB,Baker Mayfield,Baker,Mayfield,,,Full,Illness,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,3,00-0035254,LB,Anthony Nelson,Anthony,Nelson,,,Limited,Shin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,3,00-0039855,WR,Jalen McMillan,Jalen,McMillan,,,Full,Knee,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,3,00-0040143,CB,Jacob Parrish,Jacob,Parrish,,,Full,Back,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,3,00-0041031,LB,Rueben Bain Jr.,Rueben,Bain,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TB,3,00-0041502,LB,Josiah Trotter,Josiah,Trotter,,,DNP,Shoulder,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0033870,DT,Solomon Thomas,Solomon,Thomas,,,DNP,Knee,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0035261,RB,Tony Pollard,Tony,Pollard,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0037758,CB,Cordale Flott,Cordale,Flott,,,Limited,Quadricep,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0038115,TE,Daniel Bellinger,Daniel,Bellinger,,,DNP,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0039032,RB,Tyjae Spears,Tyjae,Spears,,,DNP,Ankle,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0039430,LB,James Williams,James,Williams,,,Full,Elbow,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0040020,CB,Micah Robinson,Micah,Robinson,,,Limited,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0040201,CB,Marcus Harris,Marcus,Harris,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,TEN,3,00-0040881,G,Fernando Carmona,Fernando,Carmona,,,Full,Shoulder,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0034302,LB,Frankie Luvu,Frank,Luvu,,,DNP,Groin,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0034373,LB,Dorance Armstrong,Dorance,Armstrong,,,Limited,Knee,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0034465,S,Jeremy Reaves,Jeremy,Reaves,,,Full,Knee,Elbow,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0035279,DE,Charles Omenihu,Charles,Omenihu,,,Limited,Ankle,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0036260,DT,Javon Kinlaw,Javon,Kinlaw,,,Limited,Back,Shoulder,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0036618,G,Sam Cosmi,Samuel,Cosmi,,,DNP,Concussion,Throat,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0037616,S,Nick Cross,Nicolas,Cross,,,DNP,Illness,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0037809,TE,Chig Okonkwo,Chigoziem,Okonkwo,,,DNP,Hamstring,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0037819,LB,Leo Chenal,Leo,Chenal,,,Limited,Chest,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0038100,S,Percy Butler,Percy,Butler,,,Limited,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0039681,S,Tyler Owens,Tyler,Owens,,,Full,Hamstring,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0039910,QB,Jayden Daniels,Jayden,Daniels,,,DNP,Elbow,,DNP,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0039913,T,Brandon Coleman,Brandon,Coleman,,,Full,Finger,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0040164,WR,Jaylin Lane,Joshua,Lane,,,Limited,Groin,,Limited,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0041096,RB,Kaytron Allen,Kaytron,Allen,,,Full,Hip,,Full,2026-09-25 08:22:41.624106,nflreadpy
-2026,REG,REG,WAS,3,00-0041182,K,Drew Stevens,Drew,Stevens,,,Full,Hand,,Full,2026-09-25 08:22:41.624106,nflreadpy
+2026,REG,REG,ARI,1,00-0034381,LB,Josh Sweat,Josh,Sweat,,,Full,Not injury related - resting player,Knee,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,1,00-0035859,P,Blake Gillikin,Blake,Gillikin,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,1,00-0039007,CB,Garrett Williams,Garrett,Williams,Achilles,,Out,Achilles,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,1,00-0039808,G,Isaiah Adams,Isaiah,Adams,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,1,00-0039864,S,Dadrion Taylor-Demerson,Dadrion,Taylor-Demerson,Ribs,,Out,Ribs,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,1,00-0040751,CB,Will Johnson,William,Johnson,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,1,00-0041027,RB,Jeremiyah Love,Jeremiyah,Love,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0031279,T,Jake Matthews,Jacob,Matthews,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0031576,DE,Za'Darius Smith,Za'Darius,Smith,Shoulder,,Questionable,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0034371,DT,Da'Shawn Hand,Da'Shawn,Hand,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0035237,T,Jawaan Taylor,Jawaan,Taylor,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0036212,QB,Tua Tagovailoa,Tuanigamanuolepola,Tagovailoa,Oblique,,Out,Oblique,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0036354,G,Kyle Hinton,Kyle,Hinton,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0039859,DT,Brandon Dorlus,Brandon,Dorlus,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0039917,QB,Michael Penix Jr.,Michael,Penix,Knee,,Out,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0040156,CB,Billy Bowman Jr.,Billy,Bowman,Achilles,,Out,Achilles,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0040687,T,Cameron Williams,Cameron,Williams,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0041044,WR,Zachariah Branch,Zachariah,Branch,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,1,00-0041066,LB,Kendal Daniels,Kendal,Daniels,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,1,00-0026190,DE,Calais Campbell,Calais,Campbell,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,1,00-0036130,DT,Nnamdi Madubuike,Justin,Madubuike,Neck,,Out,Neck,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,1,00-0039064,WR,Zay Flowers,Xavien,Flowers,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,1,00-0039792,WR,Devontez Walker,Devontez,Walker,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,1,00-0040069,LB,Teddye Buchanan,Teddye,Buchanan,Knee,,Out,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,1,00-0035537,RB,Ty Johnson,Ty,Johnson,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,1,00-0040192,CB,Jordan Hancock,Jordan,Hancock,Quadricep,,Questionable,Quadricep,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,1,00-0040724,DE,T.J. Sanders,Tanaeri,Sanders,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,1,00-0036903,DT,Bobby Brown III,Bobby,Brown,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,1,00-0037007,LB,Patrick Jones II,Patrick,Jones,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,1,00-0039344,RB,Jonathon Brooks,Jonathon,Brooks,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,1,00-0031583,DT,Grady Jarrett,Grady,Jarrett,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,1,00-0032391,G,Joe Thuney,Joseph,Thuney,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,1,00-0033579,S,Xavier Woods,Xavier,Woods,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,1,00-0038416,QB,Tyson Bagent,Tyson,Bagent,Back,,Questionable,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,1,00-0039919,WR,Rome Odunze,Rome,Odunze,Calf,,Questionable,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,1,00-0040740,T,Ozzy Trapilo,Ozzy,Trapilo,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,1,00-0033523,DT,Jonathan Allen,Jonathan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,1,00-0034800,DT,B.J. Hill,Bobby,Hill,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,1,00-0035683,DT,Dexter Lawrence,Dexter,Lawrence,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,1,00-0036410,WR,Tee Higgins,Tamurice,Higgins,,,Full,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,1,00-0036900,WR,Ja'Marr Chase,Ja'Marr,Chase,,,DNP,Knee,Not injury related - resting player,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,1,00-0038549,CB,DJ Turner II,DJ,Turner,,,Limited,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,1,00-0040756,DE,Shemar Stewart,Shemar,Stewart,Knee,,Doubtful,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,1,00-0033131,DT,Maliek Collins,Maliek,Collins,,,Limited,Quadricep,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,1,00-0036953,G,Teven Jenkins,Teven,Jenkins,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,1,00-0040579,LB,Carson Schwesinger,Carson,Schwesinger,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,1,00-0041073,C,Parker Brailsford,Parker,Brailsford,Thumb,,Questionable,Thumb,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,1,00-0033093,DT,Jonathan Bullard,Jonathan,Bullard,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,1,00-0037563,RB,Malik Davis,Malik,Davis,Hip,,Out,Hip,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,1,00-0038547,TE,Luke Schoonmaker,Luke,Schoonmaker,,,DNP,Not injury related - personal matter,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,1,00-0040017,T,Ajani Cornelius,Ajani,Cornelius,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,1,00-0038976,WR,Marvin Mims Jr.,Marvin,Mims,,,Full,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0038660,LB,Trevor Nowaske,Trevor,Nowaske,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0038820,S,Christian Izien,Christian,Izien,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0039396,DT,Mekhi Wingo,Mekhi,Wingo,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0039660,S,Thomas Harper,Thomas,Harper,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0039862,CB,Ennis Rakestraw Jr.,Ennis,Rakestraw,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0041441,DE,Derrick Moore,Derrick,Moore,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0041442,LB,Jimmy Rolder,James,Rolder,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,1,00-0041445,CB,Keith Abney II,Keith,Abney,,,Full,Hand,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0033109,DT,Javon Hargrave,Javon,Hargrave,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0036551,G,Aaron Banks,Aaron,Banks,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0037075,DT,Devonte Wyatt,Devonte,Wyatt,,,Limited,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0037817,T,Zach Bako-Bewele,Zach,Bako-Bewele,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0039812,LB,Ty'Ron Hopper,Ty'Ron,Hopper,Achilles,,Questionable,Achilles,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0039904,T,Jordan Morgan,Jordan,Morgan,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0040010,LB,Barryn Sorrell,Barryn,Sorrell,,,Limited,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,1,00-0040016,DT,Warren Brinson,Warren,Brinson,Calf,,Out,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,1,00-0032071,T,Trent Brown,Trenton,Brown,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,1,00-0039108,DE,Will Anderson Jr.,William,Anderson,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,1,00-0041440,DT,Kayden McDonald,Kayden,McDonald,,,DNP,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,1,00-0041465,LB,Wade Woodaz,Wade,Woodaz,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0032378,DT,DeForest Buckner,DeForest,Buckner,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0033952,DT,Grover Stewart,Grover,Stewart,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0034573,CB,Charvarius Ward,Charvarius,Ward,,,Limited,Not injury related - resting player,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0037292,TE,Andrew Ogletree,Andrew,Ogletree,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0037664,WR,Alec Pierce,Alec,Pierce,,,Limited,Heel,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0039164,QB,Anthony Richardson,Anthony,Richardson,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0039178,LB,Austin Ajiake,Austin,Ajiake,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0039876,C,Sedrick Van Pran-Granger,Sedrick,Van Pran-Granger,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,1,00-0041043,S,A.J. Haulcy,Adari,Haulcy,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,1,00-0034960,WR,Jakobi Meyers,Jakobi,Meyers,,,Limited,Thumb,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,1,00-0036655,T,Cole Van Lanen,Cole,Van Lanen,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,1,00-0038934,T,Anton Harrison,Anton,Harrison,,,DNP,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,1,00-0040238,RB,LeQuint Allen Jr.,LeQuint,Allen,Hip,,Questionable,Hip,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0032762,DT,Chris Jones,Christopher,Jones,,,DNP,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0033873,QB,Patrick Mahomes,Patrick,Mahomes,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0036374,CB,L'Jarius Sneed,L'Jarius,Sneed,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0036660,G,Trey Smith,Henry,Smith,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0037208,LB,Jack Cochrane,Jack,Cochrane,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0038982,S,Chamarri Conner,Chamarri,Conner,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0039067,WR,Rashee Rice,Rashee,Rice,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0039894,WR,Xavier Worthy,Xavier,Worthy,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0040116,T,Josh Simmons,Josh,Simmons,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0040640,DE,Ashton Gillotte,Ashton,Gillotte,,,Full,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,1,00-0041501,DE,R Mason Thomas,R Mason,Thomas,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,1,00-0031388,DE,Aaron Donald,Aaron,Donald,Not injury related - resting player,,Out,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,1,00-0033110,TE,Tyler Higbee,Tyler,Higbee,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,1,00-0033868,LB,Myles Garrett,Myles,Garrett,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,1,00-0036603,T,Alaric Jackson,Alaric,Jackson,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,1,00-0036672,LB,Grant Stuard,Grant,Stuard,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,1,00-0037195,CB,Jaylen Watson,Jaylen,Watson,,,Full,Toe,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,1,00-0039137,LB,Byron Young,Byron,Young,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,1,00-0031040,DE,Khalil Mack,Khalil,Mack,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,1,00-0037320,CB,Deane Leonard,Deane,Leonard,Abdomen,,Out,Abdomen,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,1,00-0038454,RB,Keaton Mitchell,Keaton,Mitchell,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,1,00-0039111,DE,Tuli Tuipulotu,Tuli,Tuipulotu,Hip,,Questionable,Hip,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,1,00-0040221,S,R.J. Mickens,R.J.,Mickens,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,1,00-0041550,WR,Brenen Thompson,Brenen,Thompson,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,1,00-0039338,TE,Brock Bowers,Brock,Bowers,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,1,00-0040122,RB,Ashton Jeanty,Ashton,Jeanty,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,1,00-0034779,LB,Ronnie Harrison,Ronnie,Harrison,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,1,00-0040182,S,Dante Trader Jr.,Dante,Trader,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,1,00-0041524,TE,Will Kacmarek,Will,Kacmarek,,,Full,Calf,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,1,00-0041579,TE,Seydou Traore,Seydou,Traore,,,Full,Thumb,Achilles,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,1,00-0029606,S,Harrison Smith,Harrison,Smith,,,Limited,Not injury related - resting player,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,1,00-0036616,T,Christian Darrisaw,Christian,Darrisaw,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,1,00-0041053,T,Caleb Tiernan,Caleb,Tiernan,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,1,00-0041054,S,Jakobe Thomas,Jakobe,Thomas,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,1,00-0041354,S,Jacob Thomas,Jacob,Thomas,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,1,00-0036981,DT,Christian Barmore,Christian,Barmore,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,1,00-0037413,C,Ben Brown,Timothy,Brown,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,1,00-0040734,RB,TreVeyon Henderson,TreVeyon,Henderson,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,1,00-0027962,LB,Cameron Jordan,Cameron,Jordan,Hamstring,,Out,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,1,00-0033860,DT,Davon Godchaux,Davon,Godchaux,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,1,00-0033906,RB,Alvin Kamara,Alvin,Kamara,Knee,,Questionable,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,1,00-0039373,RB,Audric Estimé,Audric,Estime,Thigh,,Out,Thigh,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,1,00-0041041,TE,Oscar Delp,Oscar,Delp,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,1,00-0031270,DT,Shelby Harris,Shelby,Harris,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,1,00-0033376,FB,Patrick Ricard,Patrick,Ricard,,,Full,Toe,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,1,00-0036386,T,Andrew Thomas,Andrew,Thomas,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,1,00-0039337,WR,Malik Nabers,Malik,Nabers,Knee,,Questionable,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,1,00-0039446,C,Bryan Hudson,Bryan,Hudson,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,1,00-0039847,TE,Theo Johnson,Theodore,Johnson,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,1,00-0033375,WR,Tim Patrick,Timothy,Patrick,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,1,00-0036842,RB,Kene Nwangwu,Kene,Nwangwu,Back,,Doubtful,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,1,00-0036902,DE,Joseph Ossai,Joseph,Ossai,Foot,,Out,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,1,00-0038120,RB,Breece Hall,Breece,Hall,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,1,00-0039798,RB,Isaiah Davis,Isaiah,Davis,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,1,00-0041032,TE,Kenyon Sadiq,Kenyon,Sadiq,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,1,00-0041038,CB,D'Angelo Ponds,D'Angelo,Ponds,Calf,,Doubtful,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,1,00-0036224,LB,Jonathan Greenard,Jonathan,Greenard,Pectoral,,Out,Pectoral,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,1,00-0041483,TE,Eli Stowers,Eli,Stowers,Hamstring,Quadricep,Out,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,1,00-0039167,CB,Joey Porter Jr.,Joey,Porter,Back,,Questionable,Back,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0036363,T,Josh Jones,Josh,Jones,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0038765,S,Ty Okada,Tyler,Okada,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0038797,RB,Emanuel Wilson,Emanuel,Wilson,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0039020,G,Anthony Bradford,Anthony,Bradford,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0039793,TE,AJ Barner,AJ,Barner,,,Full,Oblique,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0040648,WR,Tory Horton,Tory,Horton,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0040733,S,Nick Emmanwori,Nicholas,Emmanwori,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,1,00-0040873,CB,Julian Neal,Julian,Neal,,,Full,Quadricep,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0029892,FB,Kyle Juszczyk,Kyle,Juszczyk,,,Limited,Finger,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0033288,TE,George Kittle,George,Kittle,,,Limited,Achilles,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0034982,LB,Dre Greenlaw,Keaundre,Greenlaw,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0035413,LB,Luke Gifford,Luke,Gifford,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0035717,DE,Nick Bosa,Nicholas,Bosa,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0039345,CB,Renardo Green,Renardo,Green,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0040152,CB,Upton Stout,Upton,Stout,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0040721,DT,Alfred Collins,Alfred,Collins,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0041363,DT,James Thompson Jr.,James,Thompson,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0041556,DE,Romello Height,Romello,Height,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,1,00-0041557,DT,Gracen Halton,Gracen,Halton,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,1,00-0034989,T,Justin Skule,Justin,Skule,Oblique,,Doubtful,Oblique,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,1,00-0035942,LB,Christian Rozeboom,Christian,Rozeboom,Foot,,Questionable,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,1,00-0038951,RB,Sean Tucker,Sean,Tucker,Hamstring,,Doubtful,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,1,00-0039855,WR,Jalen McMillan,Jalen,McMillan,Knee,,Doubtful,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,1,00-0040129,WR,Emeka Egbuka,Emeka,Egbuka,,,Full,Toe,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,1,00-0041031,LB,Rueben Bain Jr.,Rueben,Bain,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,1,00-0041082,G,Billy Schrauth,William,Schrauth,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,1,00-0039858,LB,Cedric Gray,Cedric,Gray,Concussion,,Out,Concussion,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,1,00-0041508,DE,Keldric Faulk,Keldric,Faulk,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0032268,QB,Marcus Mariota,Marcus,Mariota,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0034333,DT,Daron Payne,Daron,Payne,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0035149,C,Nick Allegretti,Nick,Allegretti,,,Full,Calf,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0035279,DE,Charles Omenihu,Charles,Omenihu,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0036260,DT,Javon Kinlaw,Javon,Kinlaw,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0036286,LB,K'Lavon Chaisson,K'Lavon,Chaisson,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0036940,LB,Odafe Oweh,Odafe,Oweh,,,Limited,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0039368,LB,Jordan Magee,Jordan,Magee,,,Full,Chest,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0039912,TE,Ben Sinnott,Ben,Sinnott,,,Full,Oblique,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,1,00-0040242,RB,Jacory Croskey-Merritt,Jacory,Croskey-Merritt,,,Limited,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0032954,G,Isaac Seumalo,Isaac,Seumalo,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0033066,DT,Andrew Billings,Andrew,Billings,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0033890,S,Budda Baker,Bishard,Baker,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0034381,LB,Josh Sweat,Josh,Sweat,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0036568,DT,Roy Lopez,Roy,Lopez,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0037596,LB,Jack Gibbens,Jack,Gibbens,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0037744,TE,Trey McBride,Trey,McBride,,,Full,Not injury related - resting player,Back,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0039007,CB,Garrett Williams,Garrett,Williams,Achilles,,Out,Achilles,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0039807,CB,Max Melton,Malachi,Melton,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0039808,G,Isaiah Adams,Isaiah,Adams,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0039864,S,Dadrion Taylor-Demerson,Dadrion,Taylor-Demerson,Ribs,,Questionable,Ribs,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,2,00-0040645,LB,Cody Simon,Cody,Simon,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0031279,T,Jake Matthews,Jacob,Matthews,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0031576,DE,Za'Darius Smith,Za'Darius,Smith,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0033662,QB,Cooper Rush,Cooper,Rush,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0035237,T,Jawaan Taylor,Jawaan,Taylor,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0035630,G,Chris Lindstrom,Christopher,Lindstrom,Concussion,,Questionable,Concussion,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0036212,QB,Tua Tagovailoa,Tuanigamanuolepola,Tagovailoa,Oblique,,Doubtful,Oblique,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0036285,CB,A.J. Terrell,Aundell,Terrell,Shoulder,,Questionable,Shoulder,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0036833,C,Ryan Neuzil,Ryan,Neuzil,,,DNP,Illness,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0039917,QB,Michael Penix Jr.,Michael,Penix,Knee,,Out,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0040156,CB,Billy Bowman Jr.,Billy,Bowman,Achilles,,Out,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,2,00-0041066,LB,Kendal Daniels,Kendal,Daniels,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0026190,DT,Calais Campbell,Calais,Campbell,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0032965,T,Ronnie Stanley,Ronnie,Stanley,Toe,,Questionable,Toe,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0033935,LB,Trey Hendrickson,Collins,Hendrickson,Finger,,Questionable,Finger,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0036130,DT,Nnamdi Madubuike,Justin,Madubuike,Neck,,Out,Neck,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0036302,S,Jaylinn Hawkins,Jaylinn,Hawkins,,,Full,Chest,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0036369,G,John Simpson,John,Simpson,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0039064,WR,Zay Flowers,Xavien,Flowers,Hamstring,,Doubtful,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0039234,CB,T.J. Tampa,Marques,Tampa,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0039792,WR,Devontez Walker,Devontez,Walker,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0040069,LB,Teddye Buchanan,Teddye,Buchanan,Knee,,Out,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,2,00-0040104,S,Keondre Jackson,Keondre,Jackson,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,2,00-0034832,LB,Bradley Chubb,Bradley,Chubb,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,2,00-0035537,RB,Ty Johnson,Ty,Johnson,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,2,00-0037254,LB,Terrel Bernard,Terrel,Bernard,,,Limited,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,2,00-0039872,S,Cole Bishop,Cole,Bishop,Knee,Groin,Questionable,Knee,Groin,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,2,00-0040192,CB,Jordan Hancock,Jordan,Hancock,,,Full,Quadricep,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,2,00-0040724,DE,T.J. Sanders,Tanaeri,Sanders,Knee,Illness,Questionable,Knee,Illness,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,2,00-0031610,TE,Darren Waller,Darren,Waller,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,2,00-0036903,DT,Bobby Brown III,Bobby,Brown,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,2,00-0037007,LB,Patrick Jones II,Patrick,Jones,Back,,Questionable,Back,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,2,00-0039491,WR,Jalen Coker,Jalen,Coker,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0031583,DT,Grady Jarrett,Grady,Jarrett,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0032391,G,Joe Thuney,Joseph,Thuney,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0033579,S,Xavier Woods,Xavier,Woods,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0036275,RB,D'Andre Swift,D'Andre,Swift,,,Full,Ankle,Knee,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0036366,DT,Neville Gallimore,Neville,Gallimore,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0036480,DE,Dayo Odeyingbo,Temidayo,Odeyingbo,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0038932,T,Darnell Wright,Darnell,Wright,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0040236,RB,Kyle Monangai,Kyle,Monangai,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0040740,T,Ozzy Trapilo,Ozzy,Trapilo,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,2,00-0041060,CB,Malik Muhammad,Malik,Muhammad,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,2,00-0033523,DT,Jonathan Allen,Jonathan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,2,00-0033526,RB,Samaje Perine,Samaje,Perine,,,DNP,Illness,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,2,00-0034800,DT,B.J. Hill,Bobby,Hill,Achilles,,Questionable,Not injury related - resting player,Achilles,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,2,00-0035683,DT,Dexter Lawrence,Dexter,Lawrence,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,2,00-0036442,QB,Joe Burrow,Joseph,Burrow,Back,,Questionable,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,2,00-0037743,CB,Daxton Hill,Daxton,Hill,,,Full,Hand,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,2,00-0040756,DE,Shemar Stewart,Shemar,Stewart,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0033131,DT,Maliek Collins,Maliek,Collins,,,Limited,Quadricep,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0035526,C,Elgton Jenkins,Elgton,Jenkins,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0036287,CB,Noah Igbinoghene,Noah,Igbinoghene,Hand,,Questionable,,,,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0036407,WR,Jerry Jeudy,Jerry,Jeudy,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0036953,G,Teven Jenkins,Teven,Jenkins,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0036974,CB,Tyson Campbell,Tyson,Campbell,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0037818,G,Zion Johnson,Zion,Johnson,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0039014,T,Dawand Jones,Dawand,Jones,,,Full,Head,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,2,00-0041073,C,Parker Brailsford,Parker,Brailsford,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,2,00-0033877,S,Malik Hooker,Malik,Hooker,Forearm,,Out,Forearm,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,2,00-0037310,LB,James Houston,James,Houston,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,2,00-0038556,LB,DeMarvion Overshown,DeMarvion,Overshown,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,2,00-0040017,T,Ajani Cornelius,Ajani,Cornelius,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,2,00-0038976,WR,Marvin Mims Jr.,Marvin,Mims,Foot,,Out,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,2,00-0039809,LB,Jonah Elliss,Jonah,Elliss,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,2,00-0039868,WR,Troy Franklin,Troy,Franklin,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,2,00-0040730,RB,RJ Harvey,Robert,Harvey,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,2,00-0034384,CB,D.J. Reed,Dennis,Reed,Foot,,Questionable,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,2,00-0038820,S,Christian Izien,Christian,Izien,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,2,00-0038936,G,Juice Scruggs,Frederick,Scruggs,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,2,00-0039408,G,Christian Mahogany,Christian,Mahogany,Hip,,Out,Hip,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,2,00-0041439,T,Blake Miller,Blake,Miller,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0033109,DT,Javon Hargrave,Javon,Hargrave,Knee,Concussion,Doubtful,Knee,Concussion,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0036551,G,Aaron Banks,Aaron,Banks,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0036625,CB,Benjamin St-Juste,Benjamin,St-Juste,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0037075,DT,Devonte Wyatt,Devonte,Wyatt,,,Limited,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0037817,T,Zach Bako-Bewele,Zach,Bako-Bewele,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0039112,LB,Lukas Van Ness,Lukas,Van Ness,Concussion,,Questionable,Concussion,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0039812,LB,Ty'Ron Hopper,Ty'Ron,Hopper,,,Limited,Achilles,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0040010,LB,Barryn Sorrell,Barryn,Sorrell,,,Limited,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0040016,DT,Warren Brinson,Warren,Brinson,Calf,,Out,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,2,00-0041470,CB,Brandon Cisse,Brandon,Cisse,,,Full,Cramps,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0031364,DE,Jadeveon Clowney,Jadeveon,Clowney,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0032071,T,Trent Brown,Trenton,Brown,,,Full,Hand,Wrist,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0034383,TE,Dalton Schultz,Dalton,Schultz,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0036554,WR,Nico Collins,Nico,Collins,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0037633,LB,Jacob Hummel,Jacob,Hummel,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0038127,DE,Logan Hall,Logan,Hall,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0038131,G,Ed Ingram,Edward,Ingram,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0039108,DE,Will Anderson Jr.,William,Anderson,,,Limited,Not injury related - resting player,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,2,00-0041465,LB,Wade Woodaz,Wade,Woodaz,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0030279,WR,Keenan Allen,Keenan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0032378,DT,DeForest Buckner,DeForest,Buckner,,,DNP,Ankle,Not injury related - resting player,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0033952,DT,Grover Stewart,Grover,Stewart,,,Full,Not injury related - personal matter,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0034573,CB,Charvarius Ward,Charvarius,Ward,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0035021,WR,Ashton Dulin,Ashton,Dulin,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0036298,LB,Akeem Davis-Gaither,Akeem,Davis-Gaither,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0037190,CB,Sauce Gardner,Ahmad,Gardner,,,Full,Rib,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0037664,WR,Alec Pierce,Alec,Pierce,,,Full,Heel,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0039164,QB,Anthony Richardson,Anthony,Richardson,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0039178,LB,Austin Ajiake,Austin,Ajiake,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,2,00-0040179,RB,DJ Giddens,DJ,Giddens,Knee,,Questionable,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,2,00-0034413,LB,Foyesade Oluokun,Foyesade,Oluokun,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,2,00-0034960,WR,Jakobi Meyers,Jakobi,Meyers,,,Limited,Thumb,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,2,00-0036655,T,Cole Van Lanen,Cole,Van Lanen,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,2,00-0038616,CB,Christian Braswell,Christian,Braswell,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,2,00-0039893,WR,Brian Thomas Jr.,Brian,Thomas,,,Limited,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,2,00-0040238,RB,LeQuint Allen Jr.,LeQuint,Allen,,,Limited,Hip,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0032762,DT,Chris Jones,Christopher,Jones,Calf,,Questionable,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0033873,QB,Patrick Mahomes,Patrick,Mahomes,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0036374,CB,L'Jarius Sneed,L'Jarius,Sneed,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0038982,S,Chamarri Conner,Chamarri,Conner,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0039067,WR,Rashee Rice,Rashee,Rice,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0040116,T,Josh Simmons,Josh,Simmons,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0040640,DE,Ashton Gillotte,Ashton,Gillotte,,,Full,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0041501,DE,R Mason Thomas,R Mason,Thomas,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,2,00-0041543,CB,Mansoor Delane,Mansoor,Delane,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0031381,WR,Davante Adams,Davante,Adams,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0031388,DT,Aaron Donald,Aaron,Donald,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0033110,TE,Tyler Higbee,Tyler,Higbee,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0036349,S,Kam Curl,Kamren,Curl,,,Limited,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0036603,T,Alaric Jackson,Alaric,Jackson,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0037587,LB,Nate Landman,Nate,Landman,,,Limited,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0039075,WR,Puka Nacua,Puka,Nacua,Hip,,Questionable,Hip,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0039137,LB,Byron Young,Byron,Young,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0039751,WR,Jordan Whittington,Jordan,Whittington,Quadricep,,Doubtful,Quadricep,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0039774,LB,Omar Speights,Omar,Speights,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,2,00-0039834,S,Kamren Kinchens,Kamren,Kinchens,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0031040,DE,Khalil Mack,Khalil,Mack,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0032146,DE,Bud Dupree,Alvin,Dupree,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0033546,DT,Dalvin Tomlinson,Dalvin,Tomlinson,,,Full,Hamstring,Not injury related - resting player,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0035688,T,Trey Pipkins,Trey,Pipkins,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0036181,DT,Teair Tart,Teair,Tart,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0036992,S,Elijah Molden,Elijah,Molden,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0037320,CB,Deane Leonard,Deane,Leonard,Abdomen,,Questionable,Abdomen,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0038573,WR,Derius Davis,Derius,Davis,,,Full,Calf,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0039915,WR,Ladd McConkey,Andrew,McConkey,Rib,,Questionable,Rib,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,2,00-0041544,DE,Akheem Mesidor,Akheem,Mesidor,,,Full,Calf,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,2,00-0038579,QB,Aidan O'Connell,Aidan,O'Connell,Not injury related - personal matter,,Questionable,Not injury related - personal matter,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,2,00-0039338,TE,Brock Bowers,Brock,Bowers,Knee,,Doubtful,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,2,00-0040122,RB,Ashton Jeanty,Ashton,Jeanty,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,2,00-0040641,CB,Darien Porter,Darien,Porter,Foot,,Out,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,2,00-0034779,LB,Ronnie Harrison,Ronnie,Harrison,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,2,00-0037686,LS,Tucker Addington,Tucker,Addington,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,2,00-0038128,QB,Malik Willis,Malik,Willis,,,Full,Toe,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,2,00-0039911,LB,Chop Robinson,Demeioun,Robinson,Concussion,,Out,Concussion,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,2,00-0040182,S,Dante Trader Jr.,Dante,Trader,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,2,00-0041579,TE,Seydou Traore,Seydou,Traore,,,Limited,Thumb,Achilles,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,2,00-0029606,S,Harrison Smith,Harrison,Smith,,,Limited,Not injury related - resting player,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,2,00-0034158,T,Brian O'Neill,Brian,O'Neill,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,2,00-0035228,QB,Kyler Murray,Kyler,Murray,Concussion,,Out,Concussion,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,2,00-0035272,LB,Andrew Van Ginkel,Andrew,Van Ginkel,,,Full,Chest,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,2,00-0035276,LB,Blake Cashman,Blake,Cashman,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,2,00-0036259,WR,Jauan Jennings,Bennie,Jennings,Not injury related - personal matter,,Out,Not injury related - personal matter,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,2,00-0036616,T,Christian Darrisaw,Christian,Darrisaw,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,2,00-0034720,LB,Robert Spillane,Robert,Spillane,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,2,00-0034778,CB,Carlton Davis III,Carlton,Davis,Neck,,Out,Neck,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,2,00-0035678,LB,Dre'Mont Jones,Dre'Mont,Jones,Foot,,Questionable,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,2,00-0037413,C,Ben Brown,Timothy,Brown,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,2,00-0040734,RB,TreVeyon Henderson,TreVeyon,Henderson,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,2,00-0041103,T,Dametrious Crownover,Dametrious,Crownover,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0027962,LB,Cameron Jordan,Cameron,Jordan,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0033063,LS,Zach Wood,Zachary,Wood,Calf,,Out,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0033860,DT,Davon Godchaux,Davon,Godchaux,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0033906,RB,Alvin Kamara,Alvin,Kamara,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0036040,TE,Juwan Johnson,Juwan,Johnson,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0036321,LB,Chase Young,Chase,Young,Calf,,Questionable,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0037239,WR,Chris Olave,Chris,Olave,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0039622,LB,Isaiah Stalbird,Isaiah,Stalbird,Shoulder,,Doubtful,Shoulder,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0041041,TE,Oscar Delp,Oscar,Delp,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,2,00-0041390,DT,Christen Miller,Christen,Miller,Toe,,Questionable,Toe,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,2,00-0036386,T,Andrew Thomas,Andrew,Thomas,,,Limited,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,2,00-0036937,CB,Paulson Adebo,Saiid,Adebo,,,DNP,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,2,00-0036982,DE,Chauncey Golston,Chauncey,Golston,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,2,00-0036996,CB,Greg Newsome II,Greg,Newsome,,,Full,Rib,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,2,00-0037259,LB,Micah McFadden,Micah,McFadden,Neck,,Questionable,Neck,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,2,00-0039000,CB,Deonte Banks,Deonte,Banks,Calf,,Questionable,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,2,00-0041505,T,Francis Mauigoa,Francis,Mauigoa,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0033051,DT,David Onyemata,Ebuka,Onyemata,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0034789,S,Minkah Fitzpatrick,Minkah,Fitzpatrick,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0036500,LB,Jamien Sherwood,Jamien,Sherwood,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0036842,RB,Kene Nwangwu,Kene,Nwangwu,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0036902,DE,Joseph Ossai,Joseph,Ossai,Foot,,Out,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0039142,DE,Will McDonald IV,Will,McDonald,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0039372,CB,Jarvis Brownlee Jr.,Jarvis,Brownlee,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0041038,CB,D'Angelo Ponds,D'Angelo,Ponds,,,Full,Calf,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,2,00-0041511,WR,Omar Cooper Jr.,Omar,Cooper,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,2,00-0035662,WR,Marquise Brown,Marquise,Brown,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,2,00-0036224,LB,Jonathan Greenard,Jonathan,Greenard,Pectoral,,Out,Pectoral,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,2,00-0036980,WR,Elijah Moore,Elijah,Moore,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,2,00-0038386,DT,Jalen Carter,Jalen,Carter,,,Limited,Wrist,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,2,00-0039841,CB,Cooper DeJean,Cooper,DeJean,,,Full,Calf,Abdomen,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,2,00-0040749,S,Andrew Mukuba,Andrew,Mukuba,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,2,00-0027969,DT,Cameron Heyward,Cameron,Heyward,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,2,00-0036252,WR,Michael Pittman,Michael,Pittman,Foot,,Questionable,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,2,00-0038558,TE,Darnell Washington,Darnell,Washington,,,Full,Not injury related - personal matter,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,2,00-0039167,CB,Joey Porter Jr.,Joey,Porter,Back,,Out,Back,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,2,00-0039871,T,Troy Fautanu,Troy,Fautanu,Ankle,,Questionable,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0033908,WR,Cooper Kupp,Cooper,Kupp,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0034869,QB,Sam Darnold,Sam,Darnold,Glute,,Out,Glute,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0036363,T,Josh Jones,Josh,Jones,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0037137,CB,Josh Jobe,Joshua,Jobe,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0038765,S,Ty Okada,Tyler,Okada,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0039020,G,Anthony Bradford,Anthony,Bradford,Knee,Hip,Out,Knee,Hip,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0040648,WR,Tory Horton,Tory,Horton,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,2,00-0040733,S,Nick Emmanwori,Nicholas,Emmanwori,Ankle,Hip,Questionable,Ankle,Hip,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0027857,T,Trent Williams,Trenton,Williams,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0029892,FB,Kyle Juszczyk,Kyle,Juszczyk,,,Full,Finger,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0033280,RB,Christian McCaffrey,Christian,McCaffrey,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0033288,TE,George Kittle,George,Kittle,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0034173,K,Eddy Pineiro,Eddy,Pineiro,Illness,,Questionable,Illness,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0034982,LB,Dre Greenlaw,Keaundre,Greenlaw,,,Full,Not injury related - resting player,Achilles,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0035717,DE,Nick Bosa,Nicholas,Bosa,,,Full,Not injury related - resting player,Knee,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0036341,DE,Khalid Kareem,Khalid,Kareem,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0039148,DE,Keion White,Keion,White,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0040152,CB,Upton Stout,Upton,Stout,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0041035,WR,De'Zhaun Stribling,De'Zhaun-Ryan,Stribling,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,2,00-0041052,RB,Kaelon Black,Kaelon,Black,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,2,00-0032399,S,Miles Killebrew,Miles,Killebrew,Concussion,,Questionable,Concussion,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,2,00-0032889,DT,A'Shawn Robinson,A'Shawn,Robinson,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,2,00-0034989,T,Justin Skule,Justin,Skule,,,Full,Oblique,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,2,00-0035942,LB,Christian Rozeboom,Christian,Rozeboom,,,Full,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,2,00-0038951,RB,Sean Tucker,Sean,Tucker,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,2,00-0039855,WR,Jalen McMillan,Jalen,McMillan,Knee,,Questionable,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,2,00-0040143,CB,Jacob Parrish,Jacob,Parrish,Back,,Questionable,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,2,00-0037758,CB,Cordale Flott,Cordale,Flott,Quadricep,,Questionable,Quadricep,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,2,00-0039430,LB,James Williams,James,Williams,Elbow,,Questionable,Elbow,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,2,00-0039858,LB,Cedric Gray,Cedric,Gray,Concussion,,Questionable,Concussion,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0034302,LB,Frankie Luvu,Frank,Luvu,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0034333,DT,Daron Payne,Daron,Payne,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0034373,LB,Dorance Armstrong,Dorance,Armstrong,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0035279,DE,Charles Omenihu,Charles,Omenihu,,,Limited,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0036260,DT,Javon Kinlaw,Javon,Kinlaw,Back,,Questionable,Back,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0036286,LB,K'Lavon Chaisson,K'Lavon,Chaisson,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0036940,LB,Odafe Oweh,Odafe,Oweh,,,Limited,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0037092,G,Chris Paul,Chris,Paul,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0037809,TE,Chig Okonkwo,Chigoziem,Okonkwo,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0039681,S,Tyler Owens,Tyler,Owens,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0040164,WR,Jaylin Lane,Joshua,Lane,,,Limited,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,2,00-0041096,RB,Kaytron Allen,Kaytron,Allen,,,Full,Ankle,Knee,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0032954,G,Isaac Seumalo,Isaac,Seumalo,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0033119,QB,Jacoby Brissett,Jacoby,Brissett,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0034381,LB,Josh Sweat,Josh,Sweat,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0035144,LB,Mack Wilson,Lyndell,Wilson,,,Full,Not injury related - resting player,Thumb,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0035258,C,Hjalte Froholdt,Hjalte,Froholdt,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0036568,DT,Roy Lopez,Roy,Lopez,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0039007,CB,Garrett Williams,Garrett,Williams,,,Full,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0039807,CB,Max Melton,Malachi,Melton,Toe,,Questionable,Toe,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ARI,3,00-0039864,S,Dadrion Taylor-Demerson,Dadrion,Taylor-Demerson,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0033945,DE,Samson Ebukam,Nnamaka,Ebukam,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0035237,T,Jawaan Taylor,Jawaan,Taylor,,,Full,Rib,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0036204,DT,LaCale London,LaCale,London,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0036212,QB,Tua Tagovailoa,Tuanigamanuolepola,Tagovailoa,,,Full,Oblique,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0036285,CB,A.J. Terrell,Aundell,Terrell,,,DNP,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0037317,TE,Nick Muse,Nicholas,Muse,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0037746,RB,Brian Robinson,Brian,Robinson,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0039859,DT,Brandon Dorlus,Brandon,Dorlus,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0039917,QB,Michael Penix Jr.,Michael,Penix,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,ATL,3,00-0040156,CB,Billy Bowman Jr.,Billy,Bowman,Achilles,,Questionable,Achilles,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0026190,DT,Calais Campbell,Calais,Campbell,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0032398,WR,Chris Moore,Christopher,Moore,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0032965,T,Ronnie Stanley,Ronnie,Stanley,Toe,,Out,Toe,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0033935,LB,Trey Hendrickson,Collins,Hendrickson,,,Full,Finger,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0036130,DT,Nnamdi Madubuike,Justin,Madubuike,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0036369,G,John Simpson,John,Simpson,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0039064,WR,Zay Flowers,Xavien,Flowers,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0040069,LB,Teddye Buchanan,Teddye,Buchanan,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0040688,S,Malaki Starks,William,Starks,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BAL,3,00-0041494,LB,Zion Young,Zion,Young,,,Full,Quadricep,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0034827,WR,DJ Moore,Denniston,Moore,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0034832,LB,Bradley Chubb,Bradley,Chubb,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0035230,DT,Ed Oliver,Edward,Oliver,Hip,,Questionable,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0035537,RB,Ty Johnson,Ty,Johnson,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0037254,LB,Terrel Bernard,Terrel,Bernard,,,DNP,Knee,Not injury related - resting player,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0039763,LB,Joe Andreessen,Joe,Andreessen,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0039901,WR,Keon Coleman,Keon,Coleman,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0040192,CB,Jordan Hancock,Jordan,Hancock,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0040724,DE,T.J. Sanders,Tanaeri,Sanders,Illness,,Out,Illness,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,BUF,3,00-0041128,G,Ar'maj Reed-Adams,Ar'maj,Reed-Adams,Elbow,,Questionable,Elbow,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0031610,TE,Darren Waller,Darren,Waller,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0035669,S,Nick Scott,Nicholas,Scott,Rib,,Out,Rib,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0036903,DT,Bobby Brown III,Bobby,Brown,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0036934,LB,Jaelan Phillips,Jaelan,Phillips,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0037007,LB,Patrick Jones II,Patrick,Jones,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0037244,LB,Devin Lloyd,Devin,Lloyd,Calf,,Out,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0038493,LB,Claudin Cherelus,Claudin,Cherelus,Shoulder,,Out,Shoulder,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0039342,WR,Xavier Legette,Anthony,Legette,Knee,,Questionable,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CAR,3,00-0039491,WR,Jalen Coker,Jalen,Coker,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0031203,K,Cairo Santos,Cairo,Santos,,,DNP,Hip,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0031583,DT,Grady Jarrett,Grady,Jarrett,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0032391,G,Joe Thuney,Joseph,Thuney,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0038390,LB,Noah Sewell,Noah,Sewell,,,Limited,Achilles,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0038416,QB,Tyson Bagent,Tyson,Bagent,,,DNP,Concussion,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0039071,CB,Tyrique Stevenson,Tyrique,Stevenson,,,Limited,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0039918,QB,Caleb Williams,Caleb,Williams,,,DNP,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0040236,RB,Kyle Monangai,Kyle,Monangai,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CHI,3,00-0040741,DE,Shemar Turner,Shemar,Turner,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,3,00-0033523,DT,Jonathan Allen,Jonathan,Allen,,,Full,Not injury related - resting player,Knee,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,3,00-0034800,DT,B.J. Hill,Bobby,Hill,Achilles,,Doubtful,Achilles,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,3,00-0035683,DT,Dexter Lawrence,Dexter,Lawrence,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CIN,3,00-0038619,WR,Andrei Iosivas,Andrei,Iosivas,Thumb,,Out,Thumb,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,3,00-0035234,T,Tytus Howard,Tytus,Howard,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,3,00-0035680,LB,Quincy Williams,Quincy,Williams,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,3,00-0036282,S,Grant Delpit,Grant,Delpit,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,3,00-0036953,G,Teven Jenkins,Teven,Jenkins,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,3,00-0036974,CB,Tyson Campbell,Tyson,Campbell,Ankle,Not injury related - other,Questionable,Ankle,Not injury related - other,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,3,00-0040685,DT,Mason Graham,Mason,Graham,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,CLE,3,00-0040784,RB,Quinshon Judkins,Quinshon,Judkins,,,Full,Not injury related - personal matter,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,3,00-0033877,S,Malik Hooker,Malik,Hooker,Forearm,,Out,Forearm,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,3,00-0035227,S,P.J. Locke,James,Locke,Foot,,Out,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,3,00-0037310,LB,James Houston,James,Houston,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,3,00-0037839,CB,Cobie Durant,Decobie,Durant,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DAL,3,00-0038556,LB,DeMarvion Overshown,DeMarvion,Overshown,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,3,00-0036158,RB,J.K. Dobbins,J.K.,Dobbins,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,3,00-0038976,WR,Marvin Mims Jr.,Marvin,Mims,Foot,,Questionable,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,3,00-0040730,RB,RJ Harvey,Robert,Harvey,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DEN,3,00-0041496,RB,Jonah Coleman,Jonah,Coleman,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0036272,G,Ben Bartch,Ben,Bartch,Foot,,Out,Foot,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0036624,DT,Alim McNeill,Alim,McNeill,,,Full,Not injury related - personal matter,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0039408,G,Christian Mahogany,Christian,Mahogany,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0039445,LS,Hogan Hatten,Hogan,Hatten,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0039660,S,Thomas Harper,Thomas,Harper,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0040728,G,Tate Ratledge,Tate,Ratledge,,,Full,Elbow,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0040761,DE,Ahmed Hassanein,Ahmed,Hassanein,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,DET,3,00-0041439,T,Blake Miller,Blake,Miller,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0033109,DT,Javon Hargrave,Javon,Hargrave,Knee,Concussion,Questionable,Knee,Concussion,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0036551,G,Aaron Banks,Aaron,Banks,Knee,Toe,Out,Knee,Toe,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0036625,CB,Benjamin St-Juste,Benjamin,St-Juste,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0037091,WR,Bo Melton,Miles,Melton,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0037817,T,Zach Bako-Bewele,Zach,Bako-Bewele,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0039146,WR,Jayden Reed,Jayden,Reed,Neck,,Out,Neck,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0039272,G,Donovan Jennings,Donovan,Jennings,,,Limited,Hand,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0039850,LB,Edgerrin Cooper,Edgerrin,Cooper,,,Limited,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0040016,DT,Warren Brinson,Warren,Brinson,Calf,,Out,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0040689,DT,Anthony Campbell,Anthony,Campbell,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0040726,T,Anthony Belton,Anthony,Belton,,,Full,Elbow,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,GB,3,00-0041470,CB,Brandon Cisse,Brandon,Cisse,,,Full,Teeth,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0031364,DE,Jadeveon Clowney,Jadeveon,Clowney,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0032071,T,Trent Brown,Trenton,Brown,Knee,Wrist,Questionable,Knee,Wrist,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0034355,S,M.J. Stewart,Marvin,Stewart,Knee,,Out,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0034383,TE,Dalton Schultz,Dalton,Schultz,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0036554,WR,Nico Collins,Nico,Collins,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0037130,S,Reed Blankenship,Reed,Blankenship,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0037633,LB,Jacob Hummel,Jacob,Hummel,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0038127,DE,Logan Hall,Logan,Hall,,,DNP,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0038131,G,Ed Ingram,Edward,Ingram,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0039108,DE,Will Anderson Jr.,William,Anderson,,,Limited,Not injury related - resting player,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,HOU,3,00-0041465,LB,Wade Woodaz,Wade,Woodaz,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0030279,WR,Keenan Allen,Keenan,Allen,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0032378,DT,DeForest Buckner,DeForest,Buckner,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0032951,WR,Laquon Treadwell,Laquon,Treadwell,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0033952,DT,Grover Stewart,Grover,Stewart,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0034573,CB,Charvarius Ward,Charvarius,Ward,Groin,,Questionable,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0035021,WR,Ashton Dulin,Ashton,Dulin,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0036223,RB,Jonathan Taylor,Jonathan,Taylor,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0037190,CB,Sauce Gardner,Ahmad,Gardner,,,Full,Rib,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0037664,WR,Alec Pierce,Alec,Pierce,Heel,,Out,Heel,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,IND,3,00-0039736,G,Matt Goncalves,Matthew,Goncalves,,,Full,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0034960,WR,Jakobi Meyers,Jakobi,Meyers,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0036262,DT,DaVon Hamilton,DaVon,Hamilton,,,Limited,Back,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0036655,T,Cole Van Lanen,Cole,Van Lanen,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0036985,C,Robert Hainsey,Robert,Hainsey,,,Full,Elbow,Groin,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0038616,CB,Christian Braswell,Christian,Braswell,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0040238,RB,LeQuint Allen Jr.,LeQuint,Allen,,,Limited,Hip,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0040326,LB,Branson Combs,Branson,Combs,,,Full,Not injury related - personal matter,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,JAX,3,00-0041045,DT,Albert Regis,Albert,Regis,Elbow,,Doubtful,Elbow,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0032762,DT,Chris Jones,Christopher,Jones,,,Limited,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0033873,QB,Patrick Mahomes,Patrick,Mahomes,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0036374,CB,L'Jarius Sneed,L'Jarius,Sneed,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0037208,LB,Jack Cochrane,Jack,Cochrane,,,Full,Calf,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0038982,S,Chamarri Conner,Chamarri,Conner,Knee,,Doubtful,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0039006,DE,Felix Anudike-Uzomah,Felix,Anudike-Uzomah,,,Full,Quadricep,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0039067,WR,Rashee Rice,Rashee,Rice,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0039825,S,Jaden Hicks,Jaden,Hicks,,,Full,Biceps,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0040072,LB,Jeffrey Bassa,Jeffrey,Bassa,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0040116,T,Josh Simmons,Josh,Simmons,Back,,Out,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0041497,CB,Jadon Canady,Jadon,Canady,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,KC,3,00-0041543,CB,Mansoor Delane,Mansoor,Delane,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0031388,DT,Aaron Donald,Aaron,Donald,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0036244,TE,Colby Parkinson,Colby,Parkinson,Knee,,Questionable,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0036603,T,Alaric Jackson,Alaric,Jackson,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0037587,LB,Nate Landman,Nate,Landman,,,Limited,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0037841,S,Quentin Lake,Quentin,Lake,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0039075,WR,Puka Nacua,Puka,Nacua,Hip,,Doubtful,Hip,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0039137,LB,Byron Young,Byron,Young,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0039751,WR,Jordan Whittington,Jordan,Whittington,,,Full,Quadricep,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0039834,S,Kamren Kinchens,Kamren,Kinchens,Hamstring,,Doubtful,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LA,3,00-0040737,TE,Terrance Ferguson,Terrance,Ferguson,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0031040,DE,Khalil Mack,Khalil,Mack,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0033546,DT,Dalvin Tomlinson,Dalvin,Tomlinson,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0034790,S,Derwin James,Derwin,James,,,Full,Finger,Not injury related - resting player,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0035688,T,Trey Pipkins,Trey,Pipkins,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0036736,G,Kayode Awosika,Kayode,Awosika,Fibula,,Out,Fibula,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0036992,S,Elijah Molden,Elijah,Molden,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0037009,T,Rashawn Slater,Rashawn,Slater,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0037012,QB,Trey Lance,Trey,Lance,Groin,,Questionable,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0037320,CB,Deane Leonard,Deane,Leonard,,,Full,Abdomen,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0038046,TE,Charlie Kolar,Charlie,Kolar,Forearm,,Out,Forearm,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0038103,G,Cole Strange,Devin,Strange,,,Full,Pectoral,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0039111,DE,Tuli Tuipulotu,Tuli,Tuipulotu,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0039915,WR,Ladd McConkey,Andrew,McConkey,,,Full,Rib,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0041381,CB,Rodney Shelley,Rodney,Shelley,Hamstring,,Questionable,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LAC,3,00-0041550,WR,Brenen Thompson,Brenen,Thompson,Quadricep,,Out,Quadricep,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0034275,DT,Foley Fatukasi,Folorunso,Fatukasi,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0036479,DE,Kwity Paye,Kwity,Paye,Illness,,Questionable,Illness,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0037093,WR,Dareke Young,Dareke,Young,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0037527,LB,Segun Olubi,Segun,Olubi,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0037615,LB,Nakobe Dean,Nakobe,Dean,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0038579,QB,Aidan O'Connell,Aidan,O'Connell,Not injury related - personal matter,,Questionable,Not injury related - personal matter,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0039338,TE,Brock Bowers,Brock,Bowers,Knee,,Questionable,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0040199,DT,JJ Pegues,Jeremiah,Pegues,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0040641,CB,Darien Porter,Darien,Porter,,,Full,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,LV,3,00-0040868,S,Treydan Stukes,Treydan,Stukes,Concussion,,Out,Concussion,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0037686,LS,Tucker Addington,Tucker,Addington,,,Limited,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0038603,DE,Rob Beal Jr.,Robert,Beal,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0038824,WR,Ryan Miller,Ryan,Miller,Hip,Back,Questionable,Hip,Back,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0039156,CB,Julius Brents,Julius,Brents,Knee,,Questionable,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0039874,RB,Jaylen Wright,Jaylen,Wright,Stinger,Foot,Doubtful,Stinger,Foot,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0039911,LB,Chop Robinson,Demeioun,Robinson,,,Full,Concussion,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0041523,WR,Caleb Douglas,Caleb,Douglas,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0041525,WR,Chris Bell,Christopher,Bell,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0041533,CB,Chris Johnson,Anthony,Johnson,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIA,3,00-0041579,TE,Seydou Traore,Seydou,Traore,,,Full,Thumb,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0029606,S,Harrison Smith,Harrison,Smith,,,Limited,Not injury related - resting player,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0033293,RB,Aaron Jones,Aaron,Jones,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0034158,T,Brian O'Neill,Brian,O'Neill,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0036425,RB,DeeJay Dallas,DeeJay,Dallas,,,Full,Toe,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0036616,T,Christian Darrisaw,Christian,Darrisaw,,,DNP,Not injury related - resting player,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0038778,DE,Jalen Redmond,Jalen,Redmond,,,Full,Elbow,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0039237,C,Nick Samac,Nick,Samac,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0040173,DE,Tyrion Ingram-Dawkins,Tyrion,Ingram-Dawkins,,,Full,Oblique,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0041495,LB,Jake Golday,Jake,Golday,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,MIN,3,00-0041581,P,Brett Thorson,Brett,Thorson,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0031054,DT,DaQuan Jones,DaQuan,Jones,,,Full,Not injury related - personal matter,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0031330,T,Morgan Moses,Morgan,Moses,,,Limited,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0034778,CB,Carlton Davis III,Carlton,Davis,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0035678,LB,Dre'Mont Jones,Dre'Mont,Jones,Shoulder,,Out,Shoulder,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0036187,FB,Reggie Gilliam,Reggie,Gilliam,,,Limited,Knee,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0037205,S,Brenden Schooler,Brenden,Schooler,Back,,Out,Back,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0040716,S,Craig Woodson,Craig,Woodson,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0041103,T,Dametrious Crownover,Dametrious,Crownover,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0041395,TE,Eli Raridon,Elijah,Raridon,Thigh,,Questionable,Thigh,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NE,3,00-0041402,LB,Quintayvious Hutchins,Quintayvious,Hutchins,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0033860,DT,Davon Godchaux,Davon,Godchaux,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0034760,DT,Nathan Shepherd,Nathan,Shepherd,,,Limited,Hip,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0036321,LB,Chase Young,Chase,Young,,,Full,Calf,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0036973,RB,Travis Etienne,Travis,Etienne,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0037250,CB,Martin Emerson,Martin,Emerson,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0038551,RB,Kendre Miller,Kendre,Miller,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0039622,LB,Isaiah Stalbird,Isaiah,Stalbird,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0040643,S,Jonas Sanker,Jonas,Sanker,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0041099,WR,Barion Brown,Barion,Brown,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NO,3,00-0041390,DT,Christen Miller,Christen,Miller,Toe,,Out,Toe,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0031270,DT,Shelby Harris,Shelby,Harris,,,Full,Toe,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0033290,T,Jermaine Eluemunor,Jermaine,Eluemunor,,,Full,Thigh,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0035713,LB,Brian Burns,Brian,Burns,Ankle,,Questionable,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0036386,T,Andrew Thomas,Andrew,Thomas,,,Limited,Groin,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0036996,CB,Greg Newsome II,Greg,Newsome,,,Full,Rib,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0037259,LB,Micah McFadden,Micah,McFadden,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0038986,CB,Nic Jones,Nic,Jones,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0039000,CB,Deonte Banks,Deonte,Banks,Calf,,Questionable,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0039337,WR,Malik Nabers,Malik,Nabers,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0039861,S,Tyler Nubin,Tyler,Nubin,Calf,,Questionable,Calf,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0040691,QB,Jaxson Dart,Jaxson,Dart,,,DNP,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYG,3,00-0041505,T,Francis Mauigoa,Francis,Mauigoa,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,3,00-0034789,S,Minkah Fitzpatrick,Minkah,Fitzpatrick,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,3,00-0036842,RB,Kene Nwangwu,Kene,Nwangwu,Back,,Doubtful,Back,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,3,00-0036902,DE,Joseph Ossai,Joseph,Ossai,Foot,,Questionable,Foot,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,3,00-0039890,WR,Adonai Mitchell,Adonai,Mitchell,Finger,,Questionable,Finger,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,3,00-0040186,LB,Francisco Mauigoa,Francisco,Mauigoa,Quadricep,,Out,Quadricep,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,3,00-0040736,TE,Mason Taylor,Mason,Taylor,Thumb,,Out,Thumb,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,NYJ,3,00-0041026,DE,David Bailey,David,Bailey,,,Full,Elbow,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0034351,TE,Dallas Goedert,Dallas,Goedert,,,DNP,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0034844,RB,Saquon Barkley,Saquon,Barkley,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0035662,WR,Marquise Brown,Marquise,Brown,,,DNP,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0036224,LB,Jonathan Greenard,Jonathan,Greenard,,,Limited,Pectoral,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0036912,WR,DeVonta Smith,DeVonta,Smith,,,Limited,Hamstring,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0038386,DT,Jalen Carter,Jalen,Carter,,,Full,Wrist,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0038555,RB,Tank Bigsby,Cantavious,Bigsby,,,Limited,Abdomen,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0039001,G,Tyler Steen,Tyler,Steen,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0039746,RB,Will Shipley,William,Shipley,,,Limited,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PHI,3,00-0040749,S,Andrew Mukuba,Andrew,Mukuba,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0033055,CB,Jalen Ramsey,Jalen,Ramsey,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0035286,LB,Cole Holcomb,Cole,Holcomb,,,Full,Not injury related - personal matter,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0035699,CB,Jamel Dean,Jamel,Dean,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0036139,RB,Rico Dowdle,Rico,Dowdle,Toe,,Out,Toe,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0036252,WR,Michael Pittman,Michael,Pittman,Foot,,Questionable,Foot,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0037228,RB,Jaylen Warren,Derrell,Warren,Shoulder,,Questionable,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0039167,CB,Joey Porter Jr.,Joey,Porter,Not injury related - other,,Questionable,Not injury related - other,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,PIT,3,00-0041396,G,Gennings Dunker,Gennings,Dunker,Knee,,Out,Knee,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0033908,WR,Cooper Kupp,Cooper,Kupp,,,Limited,Back,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0034869,QB,Sam Darnold,Sam,Darnold,,,Full,Glute,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0034974,S,Julian Love,Julian,Love,Calf,,Out,Calf,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0036994,LB,Ernest Jones,Ernest,Jones,,,Full,Neck,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0038488,FB,Brady Russell,Brady,Russell,,,Full,Chest,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0038694,DT,Brandon Pili,Brandon,Pili,Concussion,Neck,Questionable,Concussion,Neck,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0038765,S,Ty Okada,Tyler,Okada,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0039299,RB,George Holani,George,Holani,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0040733,S,Nick Emmanwori,Nicholas,Emmanwori,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SEA,3,00-0041512,RB,Jadarian Price,Jadarian,Price,,,Full,Chest,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0027857,T,Trent Williams,Trenton,Williams,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0031408,WR,Mike Evans,Michael,Evans,Hip,,Questionable,Hip,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0032775,WR,Demarcus Robinson,Demarcus,Robinson,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0033280,RB,Christian McCaffrey,Christian,McCaffrey,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0034982,LB,Dre Greenlaw,Keaundre,Greenlaw,,,Full,Not injury related - resting player,Achilles,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0035717,DE,Nick Bosa,Nicholas,Bosa,Knee,Calf,Out,Knee,Calf,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0041363,DT,James Thompson Jr.,James,Thompson,Ankle,,Out,Ankle,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,SF,3,00-0041556,DE,Romello Height,Romello,Height,Hand,,Out,Hand,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,3,00-0032889,DE,A'Shawn Robinson,A'Shawn,Robinson,,,Full,Not injury related - resting player,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,3,00-0034855,QB,Baker Mayfield,Baker,Mayfield,,,Full,Illness,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,3,00-0035254,LB,Anthony Nelson,Anthony,Nelson,,,Full,Shin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,3,00-0039855,WR,Jalen McMillan,Jalen,McMillan,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,3,00-0040143,CB,Jacob Parrish,Jacob,Parrish,,,Full,Back,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,3,00-0041031,LB,Rueben Bain Jr.,Rueben,Bain,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TB,3,00-0041502,LB,Josiah Trotter,Josiah,Trotter,Shoulder,,Out,Shoulder,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0033870,DT,Solomon Thomas,Solomon,Thomas,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0035261,RB,Tony Pollard,Tony,Pollard,,,Limited,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0037758,CB,Cordale Flott,Cordale,Flott,Quadricep,,Questionable,Quadricep,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0038115,TE,Daniel Bellinger,Daniel,Bellinger,,,Limited,Illness,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0039032,RB,Tyjae Spears,Tyjae,Spears,Ankle,,Questionable,Ankle,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0039430,LB,James Williams,James,Williams,,,Full,Elbow,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0040020,CB,Micah Robinson,Micah,Robinson,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0040201,CB,Marcus Harris,Marcus,Harris,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,TEN,3,00-0040881,G,Fernando Carmona,Fernando,Carmona,,,Full,Shoulder,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0034302,LB,Frankie Luvu,Frank,Luvu,Groin,,Out,Groin,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0034373,LB,Dorance Armstrong,Dorance,Armstrong,,,Full,Knee,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0034465,S,Jeremy Reaves,Jeremy,Reaves,,,Full,Knee,Elbow,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0035279,DE,Charles Omenihu,Charles,Omenihu,,,Full,Ankle,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0036260,DT,Javon Kinlaw,Javon,Kinlaw,,,Full,Back,Shoulder,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0036618,G,Sam Cosmi,Samuel,Cosmi,Concussion,Throat,Out,Concussion,Throat,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0037616,S,Nick Cross,Nicolas,Cross,Illness,,Out,Illness,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0037809,TE,Chig Okonkwo,Chigoziem,Okonkwo,Hamstring,,Out,Hamstring,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0037819,LB,Leo Chenal,Leo,Chenal,,,Limited,Chest,,Limited,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0038100,S,Percy Butler,Percy,Butler,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0039681,S,Tyler Owens,Tyler,Owens,,,Full,Hamstring,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0039910,QB,Jayden Daniels,Jayden,Daniels,Elbow,,Out,Elbow,,DNP,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0039913,T,Brandon Coleman,Brandon,Coleman,,,Full,Finger,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0040164,WR,Jaylin Lane,Joshua,Lane,,,Full,Groin,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0041096,RB,Kaytron Allen,Kaytron,Allen,,,Full,Hip,,Full,2026-09-26 08:12:57.912262,nflreadpy
+2026,REG,REG,WAS,3,00-0041182,K,Drew Stevens,Drew,Stevens,,,Full,Hand,,Full,2026-09-26 08:12:57.912262,nflreadpy
