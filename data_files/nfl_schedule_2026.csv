@@ -65,6 +65,7 @@ week,date,home_team,away_team,venue,status
 4,2026-10-06 00:15:00+0000,NO,ATL,Caesars Superdome,REG
 5,2026-10-09 00:15:00+0000,DAL,TB,AT&T Stadium,REG
 5,2026-10-11 13:30:00+0000,JAX,PHI,Tottenham Hotspur Stadium,REG
+5,2026-10-11 17:00:00+0000,GB,CHI,Lambeau Field,REG
 5,2026-10-11 17:00:00+0000,MIA,CIN,Hard Rock Stadium,REG
 5,2026-10-11 17:00:00+0000,NE,LV,Gillette Stadium,REG
 5,2026-10-11 17:00:00+0000,NO,MIN,Caesars Superdome,REG
@@ -74,7 +75,6 @@ week,date,home_team,away_team,venue,status
 5,2026-10-11 17:00:00+0000,WAS,NYG,Northwest Stadium,REG
 5,2026-10-11 20:05:00+0000,LAC,DEN,SoFi Stadium,REG
 5,2026-10-11 20:25:00+0000,ARI,DET,State Farm Stadium,REG
-5,2026-10-11 20:25:00+0000,GB,CHI,Lambeau Field,REG
 5,2026-10-11 20:25:00+0000,SEA,SF,Lumen Field,REG
 5,2026-10-12 00:20:00+0000,ATL,BAL,Mercedes-Benz Stadium,REG
 5,2026-10-13 00:15:00+0000,LA,BUF,SoFi Stadium,REG
